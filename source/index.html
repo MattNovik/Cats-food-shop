@@ -10,14 +10,14 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a href="#" class="page-header logo">
-        <img class="page-header logo-image" src="img/mobile/logo-mobile.svg" alt="Кэт Энерджи" width="33" height="38">
+      <a href="#" class="page-header__logo">
+        <img class="page-header__logo-image" src="img/mobile/logo-mobile.svg" alt="Кэт Энерджи" width="33" height="38">
+        <p class="page-header__site-name"><span>cat</span> energy</p>
       </a>
-      <p class="page-header site-name"><span>cat</span> energy</p>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item--active">
             <a>
               главная
             </a>
@@ -38,7 +38,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Питание для котов - Кэт Энерджи</h1>
       <section class="promo">
-        <div class="promo-wrapper">
+        <div class="promo__wrapper">
           <header class="promo__header">
             Функциональное питание для котов
           </header>
@@ -73,23 +73,23 @@
       <section class="how-it-work">
         <h2 class="how-it-work__name">Как это работает</h3>
         <ul class="how-it-work__list">
-          <li class="how-it-work__list list-item">
-            <p>
+          <li class="how-it-work__list-item">
+            <p class="list-item-text">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
-          <li class="how-it-work__list list-item">
-            <p>
+          <li class="how-it-work__list-item">
+            <p class="list-item-text">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
-          <li class="how-it-work__list list-item">
-            <p>
+          <li class="how-it-work__list-item">
+            <p class="list-item-text">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
-          <li class="how-it-work__list list-item">
-            <p>
+          <li class="how-it-work__list-item">
+            <p class="list-item-text">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
@@ -100,40 +100,32 @@
         <p class="before-after__info">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="before-after__wrapper-numbers numbers">
-          <div class="numbers__item">
+        <div class="before-after__wrapper-numbers">
+          <div class="numbers">
             <p class="numbers__item number">5 кг</p>
             <p class="numbers__item text">снижение веса</p>
           </div>
-          <div class="numbers__item">
+          <div class="numbers">
             <p class="numbers__item number">60 дней</p>
             <p class="numbers__item text">снижение веса</p>
           </div>
-          <p class="numbers__info">
+          <p class="numbers-info">
             Затраты на питание: 15 000 РУБ.
           </p>
         </div>
-        <div class="before-after__slider">
-          <ul class="slider list-item">
-            <li class="list-item__before list-item__before--active">
+        <div class="before-after__slider slider">
+          <ul class="slider__list">
+            <li class="slider__list-before slider__list-before--active">
               <img src="img/mobile/index/before-mobileCatRes.png" width="311" height="233" alt="Кот до похудения" class="before-image">
             </li>
-            <li class="list-item__after">
+            <li class="slider__list-after">
               <img src="img/mobile/index/after-mobileCatRes.png" width="251" height="240" alt="Кот после похудения" class="after-image">
             </li>
           </ul>
-          <form action="get">
-            <ul class="slider__toogle radio-items">
-              <li>
-                <input aria-label="Чекбокс" type="radio" class="radio-items__before visually-hidden" value="before" id="before" checked>
-                <label for="before">Было</label>
-              </li>
-              <li>
-                <input aria-label="Чекбокс" type="radio" class="radio-items__after visually-hidden" value="after" id="after">
-                <label for="after">Стало</label>
-              </li>
-              </ul>
-            </form>
+          <div class="slider__toogle-wrapper">
+            <div class="slider__toogle-before">было</div>
+            <div class="slider__toogle-after">стало</div>
+          </div>
         </div>
       </section>
     </main>
@@ -149,11 +141,11 @@
       <section class="map">
         <img src="img/mobile/index/map.jpg" alt="карта компании" width="320" height="360" class="map__image">
       </section>
-      <p class="page-footer site-name"><span>cat</span> energy</p>
+      <p class="page-footer__site-name"><span>cat</span> energy</p>
       <ul class="social-link">
-        <li class="social-link__item--vk"></li>
-        <li class="social-link__item--inst"></li>
-        <li class="social-link__item--fb"></li>
+        <li class="social-link__item social-link__item--vk"></li>
+        <li class="social-link__item social-link__item--inst"></li>
+        <li class="social-link__item social-link__item--fb"></li>
       </ul>
       <div class="wrapper-html-academy html-academy">
         <p class="html-academy__text">HTML Academy</p>
