@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
+
 <body class="page-body">
   <header class="page-header">
     <a href="#" class="page-header__logo">
@@ -37,50 +38,74 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1>Подбор программы</h1>
+    <h1 class="page-main__name">Подбор программы</h1>
     <form action="post" class="form">
       <p class="form__item-text">
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
-      <fieldset class="form__item cat-info">
-        <label for="cat-name">имя:*</label>
-        <input type="text" class="cat-info__name" id="cat-name" name="cat-name"  placeholder="барсик">
-        <label for="cat-weight">вес(кг):*</label>
-        <input type="text" class="cat-info__weight" id="cat-weight" name="cat-weight" placeholder="7">
-        <label for="cat-age">возраст(лет):</label>
-        <input type="text" class="cat-info__age" id="cat-age" name="cat-age" placeholder="7">
+      <fieldset class="form__item">
+        <div class="cat-info">
+          <label for="cat-name">имя:*</label>
+          <input type="text" class="cat-info__name" id="cat-name" name="cat-name" placeholder="барсик">
+        </div>
+        <div class="cat-info">
+          <label for="cat-weight">вес(кг):*</label>
+          <input type="text" class="cat-info__weight" id="cat-weight" name="cat-weight" placeholder="7">
+        </div>
+        <div class="cat-info">
+          <label for="cat-age">возраст(лет):</label>
+          <input type="text" class="cat-info-age" id="cat-age" name="cat-age" placeholder="7">
+        </div>
       </fieldset>
-      <fieldset class="form__item target">
-        <input type="radio" class="target__lose visually-hidden" id="lose-weight" name="lose-weight" checked>
-        <label for="lose-weight">похудение</label>
-        <input type="radio" class="target__get visually-hidden" id="get-weight" name="get-weight">
-        <label for="lose-weight">похудение</label>
-        <input type="radio" class="target__unknown visually-hidden" id="unknown" name="unknown">
-        <label for="unknown">похудение</label>
+      <fieldset class="form__item">
+        <div class="target">
+          <input type="radio" class="target__lose visually-hidden" id="lose-weight" name="lose-weight" checked>
+          <label for="lose-weight">похудение</label>
+        </div>
+        <div class="target">
+          <input type="radio" class="target__get visually-hidden" id="get-weight" name="get-weight">
+          <label for="lose-weight">похудение</label>
+        </div>
+        <div class="target">
+          <input type="radio" class="target__unknown visually-hidden" id="unknown" name="unknown">
+          <label for="unknown">похудение</label>
+        </div>
       </fieldset>
-      <fieldset class="form__item contacts">
-        <p class="contacts__name">
+      <fieldset class="form__item">
+        <p class="contacts-name">
           Контактные данные (владельца кота)
         </p>
-        <label for="contacts-email">email:*</label>
-        <input type="email" class="contacts__email" id="contacts-email" name="contacts-email" placeholder="kuklachev@gmail.com">
-        <label for="contacts-tel">телефон:*</label>
-        <input type="tel" class="contacts__tel" id="contacts-tel" name="contacts-tel" placeholder="8 (960) 900-60-90">
+        <div class="contacts">
+          <label for="contacts-email">email:*</label>
+          <input type="email" class="contacts__email" id="contacts-email" name="contacts-email" placeholder="kuklachev@gmail.com">
+        </div>
+        <div class="contacts">
+          <label for="contacts-tel">телефон:*</label>
+          <input type="tel" class="contacts__tel" id="contacts-tel" name="contacts-tel" placeholder="8 (960) 900-60-90">
+        </div>
       </fieldset>
-      <fieldset class="form__item comments">
-        <p class="comments__name">Комментарий</p>
-        <textarea aria-label="Поле для текста" name="comments" class="comments__text" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <fieldset class="form__item">
+        <p class="comments-name">Комментарий</p>
+        <textarea aria-label="Поле для текста" name="comments" class="comments-text" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__item additional">
-        <p class="additional__name">Дополнительно</p>
-        <input type="checkbox" class="additional__sugar visually-hidden" id="sugar" name="sugar" checked>
-        <label for="sugar">сахарозаменитель</label>
-        <input type="checkbox" class="additional__water visually-hidden" id="water" name="water" checked>
-        <label for="water">питьевая водаь</label>
-        <input type="checkbox" class="additional__milk visually-hidden" id="milk" name="milk" checked>
-        <label for="milk">молоко</label>
-        <input type="checkbox" class="additional__vitamins visually-hidden" id="vitamins" name="vitamins" checked>
-        <label for="vitamins">витамины</label>
+      <fieldset class="form__item">
+        <p class="additional-name">Дополнительно</p>
+        <div class="additional">
+          <input type="checkbox" class="additional__sugar visually-hidden" id="sugar" name="sugar" checked>
+          <label for="sugar">сахарозаменитель</label>
+        </div>
+        <div class="additional">
+          <input type="checkbox" class="additional__water visually-hidden" id="water" name="water" checked>
+          <label for="water">питьевая водаь</label>
+        </div>
+        <div class="additional">
+          <input type="checkbox" class="additional__milk visually-hidden" id="milk" name="milk" checked>
+          <label for="milk">молоко</label>
+        </div>
+        <div class="additional">
+          <input type="checkbox" class="additional__vitamins visually-hidden" id="vitamins" name="vitamins" checked>
+          <label for="vitamins">витамины</label>
+        </div>
       </fieldset>
       <input type="submit" class="form__submit" value="отправить заявку" name="send form">
       <p class="form__help-text">* — Обязательные поля</p>
