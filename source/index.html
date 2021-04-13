@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -17,7 +18,7 @@
       <img class="page-header__logo-image" src="img/mobile/logo-mobile.svg" alt="Кэт Энерджи" width="33" height="38">
       <img src="img/mobile/logo-mobile-2.svg" alt="Текст Кэт Энерджи" width="110" height="18" class="logo-image-2">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav visually-hidden">
       <button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
@@ -49,8 +50,11 @@
           Занялся собой? Займись котом!
         </p>
         <img src="img/mobile/index/catCanMainMobileRs.png" alt="Продукт Кэт Энерджи" width="280" height="270" class="promo__image">
-        <img src="img/mobile/index/catBackMainMobileRes.png" alt="Картинка довольного кота" width="320" height="320" class="promo__back-image">
         <a href="#" class="promo__form-link">подобрать программу</a>
+      </div>
+      <div class="promo__wrapper-back-image">
+        <div class="promo__back-image">
+        </div>
       </div>
     </section>
     <section class="blog-info">

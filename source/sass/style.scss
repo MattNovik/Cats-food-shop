@@ -1,0 +1,49 @@
+/*  Viewports */
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+/*Fonts*/
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* index.html */
+@import "blocks/page.scss";
+@import "blocks/after-image.scss";
+@import "blocks/before-after.scss";
+@import "blocks/before-image.scss";
+@import "blocks/blog-info.scss";
+@import "blocks/description.scss";
+@import "blocks/how-it-work.scss";
+@import "blocks/html-academy.scss";
+@import "blocks/invite-to-work.scss";
+@import "blocks/logo-image-2.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/map.scss";
+@import "blocks/numbers.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/site-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/social-link.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/wrapper-html-academy.scss";
+
+/* catalog.html */

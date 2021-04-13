@@ -1,0 +1,27 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: auto;
+    border: none;
+    padding: auto;
+    white-space: nowrap;
+    overflow: visible;
+    -webkit-clip-path: none;
+    clip-path: none;
+    clip: auto;
+  }
+}
