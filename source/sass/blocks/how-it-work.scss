@@ -8,6 +8,10 @@
   margin: 0;
   font-size: 36px;
   line-height: 40px;
+  @media (min-width: $tablet-width) {
+    font-size:60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-work__list {
@@ -26,4 +30,8 @@
   font-size: 14px;
   line-height: 129%;
   color: $special__dark-gray;
+  @media (min-width: $tablet-width) {
+    font-size:16px;
+    line-height:24px;
+  }
 }

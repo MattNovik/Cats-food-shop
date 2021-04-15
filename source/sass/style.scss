@@ -1,33 +1,7 @@
-/*  Viewports */
-
-$tablet-width: 768px;
-$desktop-width: 1440px;
-$mobile-width-only: 767px;
-
-/*Fonts*/
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Colors */
-
-$special__dark-gray: #444444;
-$basic_grey:#F2F2F2;
-$basic_green:#68B738;
-
 /* index.html */
+@import "fonts.scss";
+@import "global.scss";
+@import "variables.scss";
 @import "blocks/page.scss";
 @import "blocks/after-image.scss";
 @import "blocks/before-after.scss";

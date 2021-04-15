@@ -1,7 +1,14 @@
-.slider {}
-
+.slider {
+    @media (min-width: $tablet-width) {
+    background: #EAEAEA;
+  }
+}
 .slider__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  @media (min-width: $tablet-width) {
+    font-size:20px;
+    line-height: 30px;
+  }
 }
