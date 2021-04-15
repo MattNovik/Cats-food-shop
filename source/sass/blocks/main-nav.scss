@@ -3,3 +3,39 @@
   flex-grow:1;
   margin:0 0 0 95px;
 }
+.main-nav__toogle {
+  display: flex;
+  align-items:center;
+  background:none;
+  margin:0;
+  padding:0;
+  border:none;
+  outline: none;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+.main-nav__toogle span {
+  position: relative;
+  width:20px;
+  height:2px;
+  background:#000;
+  &::before {
+    content: "";
+    position: absolute;
+    top:-8px;
+    left:0;
+    width:20px;
+    height:2px;
+    background: #000;
+  }
+    &::after {
+    content: "";
+    position: absolute;
+    top:8px;
+    left:0;
+    width:20px;
+    height:2px;
+    background: #000;
+  }
+}

@@ -1,5 +1,5 @@
 .site-list {
-  display: flex;
+  display: none;
   width:100%;
   justify-content:space-between;
   align-items:center;
@@ -9,6 +9,9 @@
   font-size:18px;
   line-height: 24px;
   text-transform: uppercase;
+    @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 .site-list__item--active {
   border-bottom: 2px solid $basic-green;
