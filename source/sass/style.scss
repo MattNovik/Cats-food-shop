@@ -21,6 +21,12 @@ $mobile-width-only: 767px;
   font-style: normal;
 }
 
+/* Colors */
+
+$special__dark-gray: #444444;
+$basic_grey:#F2F2F2;
+$basic_green:#68B738;
+
 /* index.html */
 @import "blocks/page.scss";
 @import "blocks/after-image.scss";

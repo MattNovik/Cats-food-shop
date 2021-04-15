@@ -1,0 +1,24 @@
+.before-after {
+  display: flex;
+  flex-direction:column;
+  padding:0 20px;
+  background: #EAEAEA;
+}
+.before-after__name {
+  font-size: 36px;
+  line-height: 40px;
+}
+.before-after__info {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+.before-after__wrapper-numbers {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.before-after__cost {
+  font-size: 14px;
+  line-height: 20px;
+}
