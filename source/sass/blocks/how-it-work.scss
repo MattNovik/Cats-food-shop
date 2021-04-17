@@ -1,0 +1,37 @@
+.how-it-work {
+  display: flex;
+  flex-direction: column;
+  margin: 27px 20px 0 20px;
+}
+
+.how-it-work__name {
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  @media (min-width: $tablet-width) {
+    font-size:60px;
+    line-height: 60px;
+  }
+}
+
+.how-it-work__list {
+  list-style-type: none;
+  margin: 18px 0 0 0;
+  padding: 0;
+}
+
+.how-it-work__list-item {
+  margin: 20px 0 0 80px;
+  height: 60px;
+}
+
+.how-it-work__item-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 129%;
+  color: $special__dark-gray;
+  @media (min-width: $tablet-width) {
+    font-size:16px;
+    line-height:24px;
+  }
+}

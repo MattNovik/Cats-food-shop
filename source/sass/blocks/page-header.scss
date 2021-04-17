@@ -1,0 +1,13 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 20px 17px 20px;
+  z-index: 100;
+}
+
+.page-header__logo-tablet {
+  width: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
