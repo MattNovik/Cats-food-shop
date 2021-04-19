@@ -1,4 +1,26 @@
-.form__item-text {
-  font-size:18px;
-  line-height: 24px;
+.form {
+  display: flex;
+  flex-direction:column;
+  margin:37px 0 0 0;
 }
+.form__item {
+  padding:0;
+  margin:0;
+  border:none;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.form__item-text {
+  width:70%;
+  font-size: 14px;
+  line-height: 18px;
+}
+.form__item--top-margin {
+  margin-top:26px;
+}
+.form__item--border-bottom {
+ padding-bottom:5px;
+  border-bottom:1px solid #D9D9D9;
+}
+
