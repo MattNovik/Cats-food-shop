@@ -1,0 +1,58 @@
+.catalog-item {
+  display: flex;
+  flex-direction:column;
+  margin:8px 0 0 0;
+  padding:0 20px;
+  border-bottom:1px solid #EBEBEB;
+}
+.catalog-item__wrapper {
+  display: flex;
+  margin:0 0 25px 0;
+}
+.catalog-item__wrapper-info {
+  display: flex;
+  width:50%;
+  flex-direction:column;
+}
+.catalog-item__wrapper-image {
+  display: flex;
+  justify-content:center;
+  align-items:flex-end;
+  width:50%;
+}
+.catalog-item__name {
+  width:60%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.catalog-item__info {
+  font-family: Arial, sans-serif;
+  width:100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-item__add-to-busket {
+  width:280px;
+  height:40px;
+  border:none;
+  margin:0 auto 25px auto;
+  background-color: $basic_green;
+  color:#fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.catalog-item__show-more {
+  width:280px;
+  height:40px;
+  border:none;
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
