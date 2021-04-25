@@ -1,0 +1,16 @@
+.additional {
+  height:26px;
+  margin: 0 0 15px 20px;
+  & label {
+    margin:0 0 0 44px;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  & input {
+
+  }
+  &:last-child {
+    margin:0 0 0 20px;
+  }
+}
