@@ -1,0 +1,27 @@
+.additional-item {
+  border-bottom:solid 1px #CDCDCD;
+}
+.additional-item__name {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.additional-item__info {
+  width:100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+.additional-item__add-to-busket {
+  width:280px;
+  height:40px;
+  border:none;
+  margin:25px 0 20px 0;
+  background-color: $basic_green;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}

@@ -1,4 +1,5 @@
 /* index.html */
+@import "body.scss";
 @import "fonts.scss";
 @import "global.scss";
 @import "variables.scss";
@@ -26,4 +27,25 @@
 @import "blocks/visually-hidden.scss";
 @import "blocks/wrapper-html-academy.scss";
 
+/* form.html */
+
+@import "blocks/form.scss";
+@import "blocks/cat-info.scss";
+@import "blocks/contacts-name.scss";
+@import "blocks/contacts.scss";
+@import "blocks/comments-name.scss";
+@import "blocks/comments-text.scss";
+@import "blocks/additional-name.scss";
+@import "blocks/additional.scss";
+@import "blocks/target.scss";
+
+
 /* catalog.html */
+
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/table-item.scss";
+@import "blocks/show-more.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/additional-item.scss";
+@import "blocks/present.scss";

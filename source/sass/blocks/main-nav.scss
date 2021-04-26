@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
+  justify-content:flex-end;
   flex-grow:1;
-  margin:0 0 0 95px;
 }
 .main-nav__toogle {
   display: flex;
@@ -17,16 +17,16 @@
 }
 .main-nav__toogle span {
   position: relative;
-  width:20px;
-  height:2px;
+  width:24px;
+  height:1.5px;
   background:#000;
   &::before {
     content: "";
     position: absolute;
     top:-8px;
     left:0;
-    width:20px;
-    height:2px;
+    width:24px;
+    height:1.5px;
     background: #000;
   }
     &::after {
@@ -34,8 +34,8 @@
     position: absolute;
     top:8px;
     left:0;
-    width:20px;
-    height:2px;
+    width:24px;
+    height:1.5px;
     background: #000;
   }
 }

@@ -9,21 +9,17 @@
   <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/normolize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <!-- намеренно оставляю разметку для моб версии, так как там логотип всё же состоит из двух отдельных частей, которые не вижу смысла ставить одним куском (тем более сильное отличие от планшета и декстопа) -->
-    <a href="#" class="page-header__logo-mobile visually-hidden">
-      <img class="page-header__logo-image" src="img/mobile/logo-mobile.svg" alt="Кэт Энерджи" width="33" height="38">
-      <img src="img/mobile/logo-mobile-2.svg" alt="Текст Кэт Энерджи" width="110" height="18" class="logo-image-2">
-    </a>
     <a href="#" class="page-header__logo-tablet">
       <img class="page-header__logo-image" src="img/mobile/logoMain.png" alt="Кэт Энерджи" width="175" height="52">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toogle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toogle" type="button"><span></span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a>
@@ -49,10 +45,10 @@
       <p class="form__item-text">
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item--top-margin form__item--border-bottom">
         <div class="cat-info">
           <label for="cat-name">имя:*</label>
-          <input type="text" class="cat-info__name" id="cat-name" name="cat-name" placeholder="барсик">
+          <input type="text" class="cat-info__name" id="cat-name" name="cat-name" placeholder="БАРСИК">
         </div>
         <div class="cat-info">
           <label for="cat-weight">вес(кг):*</label>
@@ -63,21 +59,21 @@
           <input type="text" class="cat-info-age" id="cat-age" name="cat-age" placeholder="7">
         </div>
       </fieldset>
-      <fieldset class="form__item">
-        <div class="target">
+      <fieldset class="form__item form__item--border-bottom">
+        <div class="target target--top-margin">
           <input type="radio" class="target__lose visually-hidden" id="lose-weight" name="lose-weight" checked>
           <label for="lose-weight">похудение</label>
         </div>
         <div class="target">
           <input type="radio" class="target__get visually-hidden" id="get-weight" name="get-weight">
-          <label for="lose-weight">похудение</label>
+          <label for="lose-weight">Набор массы</label>
         </div>
-        <div class="target">
+        <div class="target target--bottom-margin">
           <input type="radio" class="target__unknown visually-hidden" id="unknown" name="unknown">
-          <label for="unknown">похудение</label>
+          <label for="unknown">Не знаю (Нужен ваш совет)</label>
         </div>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item--top-margin">
         <p class="contacts-name">
           Контактные данные (владельца кота)
         </p>
@@ -90,11 +86,11 @@
           <input type="tel" class="contacts__tel" id="contacts-tel" name="contacts-tel" placeholder="8 (960) 900-60-90">
         </div>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item--top-margin comment-place">
         <p class="comments-name">Комментарий</p>
         <textarea aria-label="Поле для текста" name="comments" class="comments-text" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__item form__item--top-margin">
         <p class="additional-name">Дополнительно</p>
         <div class="additional">
           <input type="checkbox" class="additional__sugar visually-hidden" id="sugar" name="sugar" checked>
@@ -119,9 +115,9 @@
   </main>
   <footer class="page-footer">
     <section class="invite-to-work">
-      <h2 class="invite-to-work__name">
+      <h3 class="invite-to-work__name">
         приглашаем к сотрудничеству дилеров!
-      </h2>
+      </h3>
       <p class="invite-to-work__adress">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
@@ -130,7 +126,7 @@
       <img src="img/mobile/index/map.jpg" alt="карта компании" width="320" height="360" class="map__image">
     </section>
     <a href="#" class="page-footer__logo">
-      <img src="img/mobile/logo-mobile-2.svg" alt="Текст Кэт Энерджи" width="110" height="18" class="logo-image-2">
+      <img src="img/mobile/logo-mobile-2.svg" alt="Текст Кэт Энерджи" width="128" height="24" class="logo-image-2">
     </a>
     <ul class="social-link">
       <li class="social-link__item social-link__item--vk"></li>

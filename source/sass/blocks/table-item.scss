@@ -1,0 +1,7 @@
+.table-item__cell {
+  &:last-child {
+    display: flex;
+    justify-content:flex-end;
+    white-space: pre-wrap;
+  }
+}
