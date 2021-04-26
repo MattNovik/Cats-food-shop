@@ -2,7 +2,6 @@
   display: none;
   width:440px;
   justify-content:space-between;
-  align-items:center;
   list-style-type: none;
   margin:0;
   padding:0;
@@ -11,8 +10,27 @@
   text-transform: uppercase;
     @media (min-width: $tablet-width) {
     display: flex;
+    align-items:flex-end;
+  }
+    @media (min-width: $desktop-width) {
+      width:480px;
+    }
+}
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    height:36px;
+  }
+  a {
+      @media (min-width: $desktop-width) {
+      color:#fff;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 .site-list__item--active {
   border-bottom: 2px solid $basic-green;
+  @media (min-width: $desktop-width) {
+    border-bottom:2px solid #fff;
+  }
 }
