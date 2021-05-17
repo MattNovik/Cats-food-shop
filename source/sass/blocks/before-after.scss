@@ -2,20 +2,42 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  margin:42px 0 0 0;
+  margin: 42px 0 0 0;
   background: #EAEAEA;
+
   @media (min-width: $tablet-width) {
     background: none;
-    padding:0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 69px 0 0 0;
+  }
+}
+
+.before-after__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    background: $basic_grey;
+    margin: 76px 0 0 0;
+    padding: 0 110px;
   }
 }
 
 .before-after__name {
   font-size: 36px;
   line-height: 40px;
+
   @media (min-width: $tablet-width) {
-    font-size:60px;
+    font-size: 60px;
     line-height: 60px;
+    padding: 0 30px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
@@ -24,31 +46,56 @@
   font-size: 14px;
   line-height: 18px;
   color: $special__dark-gray;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 0 30px;
+    margin: 63px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
-.before-after__wrapper-numbers {
+.before-after__wrapper-info-numbers {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   @media (min-width: $tablet-width) {
-    flex-wrap:nowrap;
-    background: #EAEAEA;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: none;
+    padding: 0 30px;
+    margin: 54px 0 0 0;
   }
+
   @media (min-width: $desktop-width) {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 69px 0 0 0;
   }
 }
 
 .before-after__cost {
   font-size: 14px;
   line-height: 20px;
+
   @media (min-width: $tablet-width) {
-    font-size:20px;
-    line-height:20px;
-    background: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 20px;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }

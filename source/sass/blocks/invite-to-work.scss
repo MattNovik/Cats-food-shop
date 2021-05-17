@@ -3,6 +3,12 @@
   display: flex;
   justify-content: space-between;
   padding: 28px 20px;
+  @media (min-width: $tablet-width) {
+    padding:61px 71px 51px 71px;
+  }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 .invite-to-work--bc-white {
   background-color: #fff;
@@ -10,6 +16,7 @@
 .invite-to-work__name {
   text-transform: uppercase;
   @media (min-width: $tablet-width) {
+    width:171px;
     font-size:20px;
     line-height: 21px;
   }
@@ -17,6 +24,8 @@
 .invite-to-work__adress {
   color:$special__dark-gray;
   @media (min-width: $tablet-width) {
+    text-align: right;
+    width:151px;
     font-size:16px;
     line-height: 20px;
   }
