@@ -22,7 +22,6 @@
   }
   a {
       @media (min-width: $desktop-width) {
-      color:#fff;
       font-size: 20px;
       line-height: 30px;
     }
@@ -30,7 +29,16 @@
 }
 .site-list__item--active {
   border-bottom: 2px solid $basic-green;
-  @media (min-width: $desktop-width) {
-    border-bottom:2px solid #fff;
+}
+.site-list__item--active.site-list__item--main-page {
+    @media (min-width: $desktop-width) {
+      border-bottom:2px solid #fff;
+    }
+  }
+.site-list__item--main-page {
+  a {
+    @media (min-width: $desktop-width) {
+      color:#fff;
+    }
   }
 }

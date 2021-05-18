@@ -20,4 +20,21 @@
       text-transform: uppercase;
       color: #444444;
   }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin:20px 65px 0 71px;
+    & label {
+      margin:0 14px 0 0;
+      padding:0;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    flex-grow:1;
+    margin:0;
+    & input {
+      max-width:486px;
+      height:48px;
+    }
+  }
 }

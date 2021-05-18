@@ -2,4 +2,12 @@
   font-size: 24px;
   line-height: 26px;
   margin:0 115px 34px 20px;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin:0 0 57px 70px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 69px 0 0 110px;
+  }
 }
