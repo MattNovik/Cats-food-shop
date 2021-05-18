@@ -4,4 +4,10 @@
     justify-content:flex-end;
     white-space: pre-wrap;
   }
+  @media (min-width:$tablet-width) {
+    height:25px;
+    font-size:16px;
+    line-height:16px;
+    border-bottom:solid 1px #CDCDCD;
+  }
 }

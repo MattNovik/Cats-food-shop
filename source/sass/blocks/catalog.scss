@@ -5,4 +5,11 @@
   margin:27px 0 0 0;
   padding:0 0 41px 20px;
   border-bottom: 1px solid #EBEBEB;
+  @media (min-width: $tablet-width) {
+    padding:0 0 24px 30px;
+    margin:65px 0 0 0;
+    font-size:60px;
+    line-height:60px;
+    border-bottom:none;
+  }
 }
