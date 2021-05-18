@@ -3,6 +3,11 @@
   margin: 40px 19px 35px 19px;
   border:solid 1px transparent;
   background-image: url("../../img/mobile/catalog/gift-photo-background.png");
+  @media (min-width: $tablet-width) {
+    display: flex;
+    background-size: cover;
+    justify-content:flex-end;
+  }
 }
 .present__text {
   width:160px;
