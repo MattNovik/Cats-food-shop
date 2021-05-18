@@ -4,10 +4,21 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    font-size:  20px;
+    line-height: 30px;
+    margin:18px 0 0 88px;
+  }
 }
 .target--top-margin {
   margin-top:22px;
+  @media (min-width: $tablet-width) {
+    margin-top:30px;
+  }
 }
 .target--bottom-margin {
-  margin-top:19px;
+  margin-bottom:19px;
+  @media (min-width: $tablet-width) {
+    margin-bottom:29px;
+  }
 }

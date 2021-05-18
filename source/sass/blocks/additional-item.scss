@@ -1,11 +1,24 @@
 .additional-item {
   border-bottom:solid 1px #CDCDCD;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:0 38px;
+    margin:26px 0 0 0;
+  }
 }
 .additional-item__name {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  @media (min-width: $tablet-width) {
+    width:50%;
+    font-size:20px;
+    line-height: 20px;
+    margin:0;
+  }
 }
 .additional-item__info {
   width:100%;
@@ -13,6 +26,11 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  @media (min-width: $tablet-width) {
+    width:50%;
+    font-size:16px;
+    line-height: 20px;
+  }
 }
 .additional-item__add-to-busket {
   width:280px;
@@ -24,4 +42,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
+  @media (min-width: $tablet-width) {
+    width:100%;
+  }
 }

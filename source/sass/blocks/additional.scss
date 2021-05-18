@@ -13,4 +13,21 @@
   &:last-child {
     margin:0 0 0 20px;
   }
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 0px;
+    &:last-child {
+      margin: 0 0 0 0px;
+    }
+    & label {
+      font-size: 20px;
+      line-height: 30px;
+      margin:0 0 0 59px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    height:40px;
+    & label {
+      line-height: 40px;
+    }
+  }
 }
