@@ -17,6 +17,9 @@
     }
   }
   @media (min-width: $desktop-width) {
+    width:calc(100% - 220px);
+    max-width:1440px;
+    box-sizing:border-box;
     margin:76px 110px 0 110px;
   }
 }

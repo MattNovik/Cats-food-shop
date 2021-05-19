@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     margin:54px 0 0 0;
   }
+  @media (min-width:$desktop-width) {
+    max-width:1440px;
+    box-sizing:box-border;
+    margin:56px auto 0 auto;
+  }
 }
 .form__item {
   padding:0;

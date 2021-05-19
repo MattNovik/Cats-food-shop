@@ -8,6 +8,10 @@
     margin:65px 0 0 70px;
   }
   @media (min-width: $desktop-width) {
-    margin:74px 0 0 110px;
+    width:100%;
+    max-width:1440px;
+    box-sizing:border-box;
+    margin:73px auto 0 auto;
+    padding:0 0 0 110px;
   }
 }
