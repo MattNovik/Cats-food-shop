@@ -1,4 +1,5 @@
 .description__name {
+  position: relative;
   margin: 30px 0 0 91px;
   font-size: 24px;
   line-height: 37px;
@@ -14,7 +15,134 @@
     margin: 77px 0 0 214px;
   }
 }
-
+.description__name--slim {
+  &:before {
+    content: "";
+    position: absolute;
+    left:-69px;
+    top:-6px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color:$basic_green;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left:-67px;
+    top:-8px;
+    width:50px;
+    height:50px;
+    background-image:url('../../img/mobile/index/cat-slim.svg');
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+  }
+  @media (min-width:$tablet-width) {
+    &:before {
+      content: "";
+      position: absolute;
+      left:395px;
+      top:-6px;
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      background:$basic_green;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      left:410px;
+      top:-20px;
+      width:160px;
+      height:200px;
+      background-size: 160px 200px;
+    }
+  }
+  @media (min-width:$desktop-width) {
+    &:before {
+      content:"";
+      left:-162px;
+      top:-36px;
+      width:100px;
+      height:106px;
+    }
+    &:after {
+      content:"";
+      left:-162px;
+      top:-42px;
+      width:100px;
+      height:106px;
+      background-image:url('../../img/mobile/index/cat-slim.svg');
+      background-repeat:no-repeat;
+      background-position: 50% 50%;
+      background-size: 100px 106px;
+    }
+  }
+}
+.description__name--fat {
+  &:before {
+    content: "";
+    position: absolute;
+    left:-69px;
+    top:-6px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background:$basic_green;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left:-85px;
+    top:-8px;
+    width:75px;
+    height:50px;
+    background-image:url('../../img/mobile/index/cat-pro.svg');
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+  }
+  @media (min-width:$tablet-width) {
+    &:before {
+      content: "";
+      position: absolute;
+      left:395px;
+      top:-6px;
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      background:$basic_green;
+  }
+    &:after {
+      content: "";
+      position: absolute;
+      left:360px;
+      top:40px;
+      width:268px;
+      height:112px;
+      background-size: 268px 112px;
+    }
+  }
+  @media (min-width:$desktop-width) {
+    &:before {
+      content:"";
+      left:-162px;
+      top:-36px;
+      width:100px;
+      height:106px;
+    }
+    &:after {
+      content:"";
+      left:-180px;
+      top:-42px;
+      width:134px;
+      height:106px;
+      background-image:url('../../img/mobile/index/cat-pro.svg');
+      background-repeat:no-repeat;
+      background-position: 50% 50%;
+      background-size: 134px 156px;
+    }
+  }
+}
 .description__info {
   margin: 22px 48px 0 20px;
   font-family: Arial, sans-serif;
