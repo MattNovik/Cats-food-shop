@@ -1,3 +1,17 @@
+.catalog {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width:1440px;
+    box-sizing:border-box;
+    margin:0 auto;
+    padding:0 110px;
+  }
+}
 .catalog__name {
   display: flex;
   font-size: 36px;
@@ -11,5 +25,11 @@
     font-size:60px;
     line-height:60px;
     border-bottom:none;
+  }
+  @media (min-width: $desktop-width) {
+    max-width:1440px;
+    padding:0 110px 24px 110px;
+    margin:74px auto 0 auto;
+    box-sizing:border-box;
   }
 }

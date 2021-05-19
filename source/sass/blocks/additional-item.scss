@@ -7,6 +7,15 @@
     padding:0 38px;
     margin:26px 0 0 0;
   }
+  @media (min-width:$desktop-width) {
+    &:first-child {
+      border-top:solid 1px #CDCDCD;
+    }
+    justify-content:space-between;
+    padding:0;
+    margin:0 38px;
+    flex-wrap:nowrap;
+  }
 }
 .additional-item__name {
   font-size: 16px;
@@ -19,6 +28,9 @@
     line-height: 20px;
     margin:0;
   }
+  @media (min-width: $desktop-width) {
+    width:1fr;
+  }
 }
 .additional-item__info {
   width:100%;
@@ -30,6 +42,9 @@
     width:50%;
     font-size:16px;
     line-height: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    width:1fr;
   }
 }
 .additional-item__add-to-busket {
@@ -44,5 +59,9 @@
   color: #FFFFFF;
   @media (min-width: $tablet-width) {
     width:100%;
+  }
+  @media (min-width:$desktop-width) {
+    width: 244px;
+    margin:25px 0 20px 38px;
   }
 }
