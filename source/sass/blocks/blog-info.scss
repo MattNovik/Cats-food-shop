@@ -8,9 +8,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width:1440px;
     flex-direction: row;
     justify-content: space-between;
-    margin: 82px 110px 0 110px;
+    margin: 82px auto 0 auto;
+    padding:0 110px;
+    box-sizing:border-box;
   }
 }
 
