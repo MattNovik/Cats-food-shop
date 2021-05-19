@@ -5,8 +5,16 @@
     justify-content:flex-end;
   }
 }
+.main-nav--nojs .main-nav__toogle{
+  display: none;
+}
+.main-nav--nojs .site-list {
+  position:static;
+  min-height: 0;
+}
 .main-nav__toogle {
   position: absolute;
+  display: block;
   top:15px;
   right:24px;
   display: flex;
@@ -17,6 +25,7 @@
   border:none;
   outline: none;
   cursor: pointer;
+  z-index: 10;
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -52,5 +61,10 @@
     height:1.5px;
     background: #000;
     transform:rotate(-45deg);
+  }
+}
+.main-nav--closed .site-list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
