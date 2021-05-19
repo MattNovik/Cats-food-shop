@@ -5,8 +5,6 @@
 
   @media (min-width: $desktop-width) {
     height: 585px;
-    max-width:1440px;
-    margin:0 auto;
   }
 }
 
@@ -17,6 +15,10 @@
   justify-content: center;
   margin: 0 20px;
   z-index: 10;
+  @media (min-width: $desktop-width) {
+    max-width:1440px;
+    margin:0 auto;
+  }
 }
 
 .promo__header {
@@ -109,7 +111,9 @@
   @media (min-width: $desktop-width) {
     display: block;
     top: -117px;
-    width: 50%;
+    right:auto;
+    left:50%;
+    width:calc(100% - 50%);
     height: 694px;
   }
 }
