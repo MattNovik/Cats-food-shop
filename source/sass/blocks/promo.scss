@@ -15,6 +15,10 @@
   justify-content: center;
   margin: 0 20px;
   z-index: 10;
+  @media (min-width:$tablet-width) {
+    max-width:708px;
+    margin:0 auto;
+  }
   @media (min-width: $desktop-width) {
     max-width:1440px;
     margin:0 auto;
@@ -111,7 +115,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: none;
     top: -117px;
     right:auto;
     left:50%;

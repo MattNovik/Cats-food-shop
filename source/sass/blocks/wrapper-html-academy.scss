@@ -4,6 +4,9 @@
   width:100%;
   height:22px;
   margin:22px 0;
+  @media (min-width:$tablet-width) {
+    justify-content:flex-end;
+  }
 }
 .html-academy__text {
   height:22px;

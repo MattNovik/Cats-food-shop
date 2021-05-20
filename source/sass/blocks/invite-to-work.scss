@@ -18,6 +18,10 @@
   display: flex;
   justify-content: space-between;
   max-width:410px;
+  @media (min-width: $tablet-width) {
+    width:100%;
+    max-width:708px;
+  }
 }
 .invite-to-work__name {
   font-size:16px;
