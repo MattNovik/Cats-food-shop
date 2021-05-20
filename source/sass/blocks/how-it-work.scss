@@ -1,12 +1,15 @@
 .how-it-work {
   display: flex;
   flex-direction: column;
-  margin: 27px 20px 0 20px;
-
+  padding:0 20px;
+  box-sizing:border-box;
+  margin: 27px auto 0 auto;
+  max-width:410px;
   @media (min-width: $tablet-width) {
     margin: 45px 0 0 0;
     padding: 0 30px;
     border-bottom: solid 1px #E6E6E6;
+    max-width:none;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,9 +46,19 @@
 }
 
 .how-it-work__list-item {
-  margin: 20px 0 0 80px;
+  position: relative;
+  padding: 0 0 0 80px;
+  margin:20px 0 0 0;
   height: 60px;
-
+  &:before {
+    content: "";
+    position: absolute;
+    left:0;
+    top:0;
+    width:60px;
+    height:60px;
+    background-color:$basic_green;
+  }
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 40%;
@@ -68,7 +81,66 @@
     }
   }
 }
-
+.how-it-work__list-item.how-it-work__list-item--leaf {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:60px;
+    background-image:url('../../img/mobile/icon_leaf.svg');
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size:30px 30px;
+  }
+}
+.how-it-work__list-item.how-it-work__list-item--libra {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:60px;
+    background-image:url('../../img/mobile/icon_alarm.svg');
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size:30px 30px;
+  }
+}
+.how-it-work__list-item.how-it-work__list-item--water {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:60px;
+    background-image:url('../../img/mobile/icon_tub.svg');
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size:30px 30px;
+  }
+}
+.how-it-work__list-item.how-it-work__list-item--knife {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:60px;
+    background-image:url('../../img/mobile/icon_eat.svg');
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size:30px 30px;
+  }
+}
 .how-it-work__item-text {
   font-family: Arial, sans-serif;
   margin: 0;

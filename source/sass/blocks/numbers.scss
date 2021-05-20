@@ -1,6 +1,10 @@
 .numbers {
+  position: relative;
   width: 50%;
-
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin:25px 0 0 0;
   @media (min-width: $tablet-width) {
     width: auto;
   }
@@ -14,9 +18,18 @@
 }
 
 .numbers__item--number {
+  display: flex;
+  justify-content:center;
+  align-items:center;
   font-size: 24px;
   line-height: 24px;
-
+  width:124px;
+  height:56px;
+  border: 1px solid #CDCDCD;
+  margin:0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-transform: uppercase;
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
@@ -24,10 +37,20 @@
 }
 
 .numbers__item--text {
+  position: absolute;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  top:38px;
+  width:87px;
+  height:19px;
   font-size: 12px;
   line-height: 12px;
   color: $special__dark-gray;
-
+  background: #EAEAEA;
+  padding:0 15px;
+  box-sizing:border-box;
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;

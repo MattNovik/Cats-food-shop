@@ -25,6 +25,11 @@
   }
 }
 .before-after__wrapper {
+  max-width:410px;
+  margin:0 auto;
+  @media (min-width: $tablet-width){
+    max-width:none;
+  }
   @media (min-width: $desktop-width) {
     position: relative;
     width:100%;
@@ -46,12 +51,17 @@
 .before-after__name {
   font-size: 36px;
   line-height: 40px;
-
+  width:100%;
+  max-width:410px;
+  margin:27px auto 0 auto;
+  text-align: left;
   @media (min-width: $tablet-width) {
+    width:auto;
     font-size: 60px;
     line-height: 60px;
     padding: 0 30px;
     margin: 0;
+    max-width:none;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,7 +79,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $special__dark-gray;
-
+  margin:33px 0 0 0;
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -106,7 +116,8 @@
 .before-after__cost {
   font-size: 14px;
   line-height: 20px;
-
+  margin:26px 0 0 0;
+  text-transform: uppercase;
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
