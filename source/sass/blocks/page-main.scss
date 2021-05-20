@@ -1,7 +1,10 @@
 .page-main__name {
-  margin:27px 0 0 20px;
+  margin:27px auto 0 auto;
+  padding:0 0 0 20px;
   font-size: 36px;
   line-height: 36px;
+  max-width:410px;
+  box-sizing:border-box;
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;

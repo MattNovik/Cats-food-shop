@@ -1,7 +1,22 @@
 .contacts-name {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
-  margin:0 115px 0 20px;
+  padding:0 115px 0 20px;
+  box-sizing:border-box;
+  max-width:410px;
+  margin:0 auto 0 auto;
+  background-color: #fff;
+  z-index: 120;
+  &:after {
+    content: "";
+    position: absolute;
+    right:0;
+    top:25px;
+    height:2px;
+    width:calc(100% - 217px);
+    background-color: $basic_green;
+  }
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
