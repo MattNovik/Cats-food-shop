@@ -57,8 +57,11 @@
     margin: 72px auto 0 auto;
   }
   @media (min-width:$desktop-width) {
+    max-width:1440px;
     display: flex;
-    max-width:none;
+    justify-content:space-between;
+    grid-column-gap:0;
+    grid-row-gap:0;
   }
 }
 
@@ -93,7 +96,7 @@
   }
   @media (min-width: $desktop-width) {
     width: 230px;
-
+    min-width:230px;
     &:nth-child(3),
     &:last-child {
       margin: 0 0 0 0;
