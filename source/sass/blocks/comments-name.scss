@@ -1,13 +1,34 @@
 .comments-name {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
-  margin:0 115px 0 20px;
+  padding:0 115px 0 20px;
+  margin:0 auto;
+  max-width: 410px;
+  box-sizing:border-box;
+  background-color: #fff;
+  &:after {
+    content: "";
+    position: absolute;
+    right:0;
+    top:12px;
+    height:2px;
+    width:calc(100% - 155px);
+    background-color: $basic_green;
+  }
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin:0 0 56px 69px;
+    padding:0 0 38px 69px;
+    max-width:708px;
+    &:after {
+      top:25px;
+      width:calc(100% - 300px);
+    }
   }
   @media (min-width: $desktop-width) {
-    margin:69px 0 0 110px;
+    max-width:1330px;
+    margin: 69px auto 76px auto;
+    padding:0 0 0 55px;
   }
 }

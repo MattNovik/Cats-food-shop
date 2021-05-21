@@ -1,13 +1,23 @@
 .page-main__name {
-  margin:27px 0 0 20px;
+  margin:27px auto 0 auto;
+  padding:0 0 0 20px;
   font-size: 36px;
   line-height: 36px;
+  max-width:410px;
+  box-sizing:border-box;
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin:65px 0 0 70px;
+    padding:65px 0 0 70px;
+    margin:0 auto;
+    box-sizing:border-box;
+    max-width:708px;
   }
   @media (min-width: $desktop-width) {
-    margin:74px 0 0 110px;
+    width:100%;
+    max-width:1440px;
+    box-sizing:border-box;
+    margin:73px auto 0 auto;
+    padding:0 0 0 110px;
   }
 }

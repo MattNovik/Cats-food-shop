@@ -15,13 +15,22 @@
   justify-content: center;
   margin: 0 20px;
   z-index: 10;
+  @media (min-width:$tablet-width) {
+    max-width:708px;
+    margin:0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    max-width:1440px;
+    margin:0 auto;
+  }
 }
 
 .promo__header {
-  margin: 27px 0 0 0;
+  margin: 27px auto 0 auto;
   text-align: center;
   font-size: 36px;
   line-height: 36px;
+  max-width:300px;
 
   @media (min-width: $tablet-width) {
     width: 414px;
@@ -30,6 +39,7 @@
     font-size: 60px;
     line-height: 60px;
     color: #000;
+    max-width:none;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,9 +115,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: none;
     top: -117px;
-    width: 50%;
+    right:auto;
+    left:50%;
+    width:calc(100% - 50%);
     height: 694px;
   }
 }

@@ -1,6 +1,25 @@
-.page-body {
-  @media (min-width: $desktop-width) {
-    max-width:1440px;
-    margin:0 auto;
+.page-body.page-body--bg {
+  @media (min-width:$desktop-width) {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top:0;
+      right:0;
+      width:50%;
+      height:694px;
+      background-image: url("../../img/mobile/index/catBackMainMobileRes.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top:0;
+      right:0;
+      width:50%;
+      height:694px;
+      background-color:  rgba(104, 183, 56, 0.85);
+    }
   }
 }

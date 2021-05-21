@@ -1,13 +1,27 @@
+.table-item {
+  @media (min-width:$desktop-width) {
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+  }
+}
 .table-item__cell {
   &:last-child {
     display: flex;
     justify-content:flex-end;
     white-space: pre-wrap;
+    margin:0 0 0 49px;
   }
   @media (min-width:$tablet-width) {
     height:25px;
     font-size:16px;
-    line-height:16px;
-    border-bottom:solid 1px #CDCDCD;
+    line-height:27px;
+  }
+  @media (min-width:$desktop-width) {
+    text-align: left;
+    &:last-child {
+      text-align: right;
+      margin:0;
+    }
   }
 }

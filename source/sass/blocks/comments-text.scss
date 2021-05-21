@@ -1,22 +1,30 @@
 .comments-text {
+  display: flex;
+  justify-content:space-between;
   width:calc(100% - 40px);
   box-sizing:border-box;
   padding:9px 12px 0 15px;
-  margin:38px 20px 0 20px;
+  max-width:375px;
+  margin:38px auto 0 auto;
   &::placeholder {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    margin:0 auto;
   }
   @media (min-width: $tablet-width) {
     width:calc(100% - 139px);
-    margin:0px 67px 0 70px;
+    padding:10px 0 0 19px;
+    max-width:570px;
     &::placeholder {
       font-size: 20px;
       line-height: 30px;
     }
   }
   @media (min-width: $desktop-width) {
-    margin:76px 110px 0 110px;
+    width:calc(100% - 220px);
+    max-width:1220px;
+    box-sizing:border-box;
+    padding:19px  0 0 10px;
   }
 }

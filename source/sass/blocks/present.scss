@@ -1,12 +1,36 @@
 .present {
   height:280px;
-  margin: 40px 19px 35px 19px;
+  max-width:410px;
+  margin: 40px auto 35px auto;
   border:solid 1px transparent;
   background-image: url("../../img/mobile/catalog/gift-photo-background.png");
   @media (min-width: $tablet-width) {
     display: flex;
     background-size: cover;
     justify-content:flex-end;
+    margin: 40px auto 35px auto;
+    max-width:708px;
+    box-sizing:border-box;
+    background-size:686px auto;
+    background-position:top right;
+    background-repeat:no-repeat;
+  }
+  @media (min-width: $desktop-width) {
+    width:245px;
+    height:289px;
+    margin:0 0 0 80px;
+    justify-content:center;
+  }
+}
+.present__wrapper {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    align-items:center;
+    margin: 0 124px 0 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin:0 0 42px 0;
+    align-items:flex-end;
   }
 }
 .present__text {
@@ -18,4 +42,11 @@
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  @media (min-width:$tablet-width) {
+    text-align:left;
+    margin:0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    text-align:center;
+  }
 }

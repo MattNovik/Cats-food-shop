@@ -1,7 +1,8 @@
 .invite-to-work {
   height: 114px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items:center;
   padding: 28px 20px;
   @media (min-width: $tablet-width) {
     padding:61px 71px 51px 71px;
@@ -13,7 +14,18 @@
 .invite-to-work--bc-white {
   background-color: #fff;
 }
+.invite-to-work__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width:410px;
+  @media (min-width: $tablet-width) {
+    width:100%;
+    max-width:708px;
+  }
+}
 .invite-to-work__name {
+  font-size:16px;
+  line-height: 18px;
   text-transform: uppercase;
   @media (min-width: $tablet-width) {
     width:171px;
@@ -22,6 +34,8 @@
   }
 }
 .invite-to-work__adress {
+  font-size:14px;
+  line-height: 20px;
   color:$special__dark-gray;
   @media (min-width: $tablet-width) {
     text-align: right;
