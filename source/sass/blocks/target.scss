@@ -15,6 +15,54 @@
     max-width:none;
   }
 }
+.target__lose+label,
+.target__get+label,
+.target__unknown+label {
+  position:relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left:-45px;
+    top:-2px;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+  }
+  @media  (min-width:$tablet-width) {
+    &:before {
+      left:-60px;
+      top:-5px;
+      width:40px;
+      height:40px;
+      border-radius: 50%;
+      border: 1px solid #CDCDCD;
+      box-sizing: border-box;
+    }
+  }
+}
+.target__lose+label {
+  &:after {
+    content: "";
+    position: absolute;
+    left:-36px;
+    top:6px;
+    width:13px;
+    height:13px;
+    border-radius: 50%;
+    background-color: $basic_green;
+    box-sizing: border-box;
+  }
+  @media (min-width:$tablet-width) {
+    &:after {
+      left:-48px;
+      top:7px;
+      width:18px;
+      height:18px;
+    }
+  }
+}
 .target--top-margin {
   margin-top:22px;
   @media (min-width: $tablet-width) {

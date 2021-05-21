@@ -10,17 +10,35 @@
   }
 }
 .show-more__name {
+  position: relative;
   text-align: center;
   margin:78px 0 0 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  &:before {
+    content: "";
+    position: absolute;
+    top:-53px;
+    left:calc(50% - 15px);
+    background-image: url('../../img/mobile/plus.svg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    width:30px;
+    height:30px;
+  }
   @media (min-width: $tablet-width) {
-    width:50%;
+    width:60%;
     margin:161px auto 0 auto;
     font-size:20px;
     line-height:22px;
+    &:before {
+      top:-109px;
+      left:calc(50% - 30px);
+      width:60px;
+      height:60px;
+    }
   }
 }
 .show-more__text {

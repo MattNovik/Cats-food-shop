@@ -125,6 +125,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 0 67px 72px 70px;
     max-width:708px;
+    box-sizing:border-box;
   }
   @media (min-width: $desktop-width) {
     box-sizing:border-box;
@@ -199,7 +200,7 @@
     width:282px;
     font-size: 20px;
     line-height: 20px;
-    margin:0 0 0 59px;
+    margin:0 0 0 0;
   }
   @media (min-width: $desktop-width) {
     width:100%;
