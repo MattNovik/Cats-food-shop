@@ -8,9 +8,12 @@
       right:0;
       width:50%;
       height:694px;
-      background-image: url("../../img/mobile/index/catBackMainMobileRes.png");
+      background-image: url("../../img/mobile/index/catBackMainDeskRes.png");
       background-repeat: no-repeat;
       background-size: cover;
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/mobile/index/catBackMainDeskRes@2.png");
+      }
     }
     &:after {
       content: "";
