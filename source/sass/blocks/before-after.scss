@@ -13,7 +13,7 @@
     position: relative;
     margin: 69px 0 0 0;
     width:100%;
-    padding:0 0 64px 0;
+    padding:0 0 0 0;
     &:before {
       content: "";
       position:absolute;
@@ -23,9 +23,20 @@
       background: $basic_grey;
       height:calc(100% - 136px);
     }
+    &:after {
+      content: "";
+      position: absolute;
+      right:0;
+      top:136px;
+      width:30%;
+      height:calc(100% - 136px);
+      background:#EAEAEA;
+      z-index: 2;
+    }
   }
 }
 .before-after__wrapper {
+  position: relative;
   max-width:410px;
   margin:0 auto;
   @media (min-width: $tablet-width){
@@ -40,7 +51,19 @@
     margin:76px auto 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 110px;
+    padding: 0 110px 50px 110px;
+    background:#F2F2F2;
+    z-index: 20;
+    &:before{
+      content: "";
+      position: absolute;
+      width:405px;
+      height:450px;
+      top:0;
+      right:0;
+      background:#EAEAEA;
+      z-index: -1;
+    }
   }
 }
 

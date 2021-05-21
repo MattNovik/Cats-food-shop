@@ -16,7 +16,11 @@
 <body class="page-body">
   <header class="page-header">
     <a href="#" class="page-header__logo-tablet">
-      <img class="page-header__logo-image" src="img/mobile/logoMain.png" alt="Кэт Энерджи" width="175" height="52">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/mobile/index/logoDesk.png 1x, img/mobile/index/logoDesk@2.png 2x">
+        <source media="(min-width:768px)" srcset="img/mobile/index/logoTablet.png 1x, img/mobile/index/logoTablet@2.png 2x">
+        <img class="page-header__logo-image" src="img/mobile/index/logo-mobile.png" alt="Кэт Энерджи" width="34" height="38">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toogle" type="button"></button>

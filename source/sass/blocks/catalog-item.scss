@@ -53,7 +53,18 @@
     top:-80px;
     height:200px;
     width:168px;
-    border:solid 1px red;
+  }
+}
+.catalog-item__image {
+  @media (min-width:$tablet-width) {
+    width:160px;
+    height:172px;
+  }
+}
+.catalog-item__image--big {
+  @media (min-width:$tablet-width) {
+    width:168px;
+    height:200px;
   }
 }
 .catalog-item__name {
