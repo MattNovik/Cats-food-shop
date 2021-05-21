@@ -123,6 +123,7 @@
     display: grid;
     grid-template-rows: 72px 72px 52px;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 61px;
     padding: 0 67px 72px 70px;
     max-width:708px;
     box-sizing:border-box;
@@ -136,7 +137,7 @@
     grid-template-areas:
       "ad ad ad ad"
       "sub sub text text";
-    grid-column-gap: 40px;
+    grid-column-gap: 81px;
   }
 }
 
@@ -216,10 +217,10 @@
   text-align: center;
   @media (min-width: $tablet-width) {
     text-align:left;
-    width:50%;
+    width:100%;
     font-size: 16px;
     line-height: 36px;
-    margin:0 0 0 59px;
+    margin:0 0 0 0;
   }
   @media (min-width: $desktop-width) {
     text-align:left;
