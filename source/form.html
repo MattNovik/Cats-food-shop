@@ -16,7 +16,11 @@
 <body class="page-body">
   <header class="page-header">
     <a href="#" class="page-header__logo-tablet">
-      <img class="page-header__logo-image" src="img/mobile/logoMain.png" alt="Кэт Энерджи" width="175" height="52">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/mobile/index/logoDesk.png 1x, img/mobile/index/logoDesk@2.png 2x">
+        <source media="(min-width:768px)" srcset="img/mobile/index/logoTablet.png 1x, img/mobile/index/logoTablet@2.png 2x">
+        <img class="page-header__logo-image" src="img/mobile/index/logo-mobile.png" alt="Кэт Энерджи" width="34" height="38">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toogle" type="button"></button>
@@ -103,7 +107,7 @@
           </div>
           <div class="additional">
             <input type="checkbox" class="additional__water visually-hidden" id="water" name="water" checked>
-            <label for="water">питьевая водаь</label>
+            <label for="water">питьевая вода</label>
           </div>
           <div class="additional">
             <input type="checkbox" class="additional__milk visually-hidden" id="milk" name="milk" checked>
@@ -137,11 +141,13 @@
       <a href="#" class="page-footer__logo">
         <img src="img/mobile/logo-mobile-2.svg" alt="Текст Кэт Энерджи" width="128" height="24" class="logo-image-2">
       </a>
-      <ul class="social-link">
-        <li class="social-link__item social-link__item--vk"></li>
-        <li class="social-link__item social-link__item--inst"></li>
-        <li class="social-link__item social-link__item--fb"></li>
-      </ul>
+      <div class="social-link__wrapper">
+        <ul class="social-link">
+          <li class="social-link__item social-link__item--vk"></li>
+          <li class="social-link__item social-link__item--inst"></li>
+          <li class="social-link__item social-link__item--fb"></li>
+        </ul>
+      </div>
       <div class="wrapper-html-academy html-academy">
         <p class="html-academy__text">HTML Academy</p>
         <a href="#" class="html-academy__link"></a>

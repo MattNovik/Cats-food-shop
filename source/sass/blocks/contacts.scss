@@ -31,9 +31,13 @@
   }
   @media (min-width: $desktop-width) {
     flex-grow:1;
+    justify-content:space-between;
     margin:0;
+    &:first-child {
+      margin: 0 78px 0 0;
+    }
     & input {
-      max-width:486px;
+      max-width:500px;
       height:48px;
     }
   }

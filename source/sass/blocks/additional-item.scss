@@ -49,6 +49,9 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  .table-item {
+    border:none;
+  }
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content:flex-end;
@@ -81,6 +84,6 @@
   @media (min-width:$desktop-width) {
     width: 244px;
     min-width:244px;
-    margin:25px 0 20px 38px;
+    margin:15px 0 17px 38px;
   }
 }

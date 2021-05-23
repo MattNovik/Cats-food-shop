@@ -14,7 +14,7 @@
   &:before {
     content: "";
     position: absolute;
-    top:25px;
+    top:40px;
     right:0;
     width:60%;
     height:2px;
@@ -73,9 +73,9 @@
     content: "";
     position: absolute;
     right:0;
-    top:22px;
+    top:15px;
     height:2px;
-    width:calc(100% - 395px);
+    width:calc(100% - 255px);
     background-color: $basic_green;
   }
   @media (min-width: $tablet-width) {
@@ -85,6 +85,10 @@
     margin:0 auto;
     max-width:708px;
     border:none;
+    &:after {
+      top:22px;
+      width:calc(100% - 395px);
+    }
   }
   @media (min-width:$desktop-width) {
     width:100%;

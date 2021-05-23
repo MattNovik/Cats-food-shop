@@ -16,7 +16,11 @@
 <body class="page-body page-body--bg">
   <header class="page-header">
     <a href="#" class="page-header__logo-tablet">
-      <img class="page-header__logo-image" src="img/mobile/logoMain.png" alt="Кэт Энерджи" width="175" height="52">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/mobile/index/logoDesk.png 1x, img/mobile/index/logoDesk@2.png 2x">
+        <source media="(min-width:768px)" srcset="img/mobile/index/logoTablet.png 1x, img/mobile/index/logoTablet@2.png 2x">
+        <img class="page-header__logo-image" src="img/mobile/index/logo-mobile.png" alt="Кэт Энерджи" width="34" height="38">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toogle" type="button"></button>
@@ -49,7 +53,11 @@
         <p class="promo__text">
           Занялся собой? Займись котом!
         </p>
-        <img src="img/mobile/index/catCanMainMobileRs.png" alt="Продукт Кэт Энерджи" width="280" height="270" class="promo__image">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/mobile/index/catCanMainDeskRs.png 1x, img/mobile/index/catCanMainDeskRs@2.png 2x">
+          <source media="(min-width:768px)" srcset="img/mobile/index/catCanMainTabletRs.png 1x, img/mobile/index/catCanMainTabletRs@2.png 2x">
+          <img srcset="img/mobile/index/catCanMainMobileRs.png 1x, img/mobile/index/catCanMainMobileRs@2.png 2x" alt="Продукт Кэт Энерджи" width="280" height="270" class="promo__image">
+        </picture>
         <a href="form.html" class="promo__form-link">подобрать программу</a>
       </div>
       <div class="promo__wrapper-back-image">
@@ -126,10 +134,18 @@
         <div class="before-after__slider slider">
           <ul class="slider__list">
             <li class="slider__list-before slider__list-before--active">
-              <img src="img/mobile/index/before-mobileCatRes.png" width="311" height="233" alt="Кот до похудения" class="before-image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/mobile/index/index/before-afterBigImgDesk.png 1x, img/mobile/index/before-afterBigImgDesk@2.png 2x">
+                <source media="(min-width:768px)" srcset="img/mobile/index/before-afterBigImgTablet.png, img/mobile/index/before-afterBigImgTablet@2.png 2x">
+                <img srcset="img/mobile/index/before-mobileCatRes.png 1x,img/mobile/index/before-mobileCatRes@2.png 2x" width="311" height="233" alt="Кот до похудения" class="before-image">
+              </picture>
             </li>
             <li class="slider__list-after">
-              <img src="img/mobile/index/after-mobileCatRes.png" width="251" height="240" alt="Кот после похудения" class="after-image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/mobile/index/before-afterBigImgDesk.png 1x, img/mobile/index/before-afterBigImgDesk@2.png 2x">
+                <source media="(min-width:768px)" srcset="img/mobile/index/before-afterBigImgTablet.png 1x, img/mobile/index/before-afterBigImgTablet@2.png 2x">
+                <img srcset="img/mobile/index/after-mobileCatRes.png 1x,img/mobile/index/after-mobileCatRes@2.png 2x" width="251" height="240" alt="Кот после похудения" class="after-image">
+              </picture>
             </li>
           </ul>
           <div class="slider__toogle-wrapper">
@@ -152,17 +168,23 @@
       </div>
     </section>
     <section class="map">
-      <img src="img/mobile/index/map.jpg" alt="карта компании" width="320" height="360" class="map__image">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/mobile/index/mapDesk.jpg 1x, img/mobile/index/mapDesk@2.jpg 2x">
+        <source media="(min-width:768px)" srcset="img/mobile/index/mapTablet.jpg 1x, img/mobile/index/mapTablet@2.jpg 2x">
+        <img srcset="img/mobile/index/map.jpg 1x,img/mobile/index/map@2.jpg 2x" alt="карта компании" width="320" height="360" class="map__image">
+      </picture>
     </section>
     <div class="page-footer__additional-info">
       <a href="#" class="page-footer__logo">
         <img src="img/mobile/logo-mobile-2.svg" alt="Текст Кэт Энерджи" width="128" height="24" class="logo-image-2">
       </a>
-      <ul class="social-link">
-        <li class="social-link__item social-link__item--vk"></li>
-        <li class="social-link__item social-link__item--inst"></li>
-        <li class="social-link__item social-link__item--fb"></li>
-      </ul>
+      <div class="social-link__wrapper">
+        <ul class="social-link">
+          <li class="social-link__item social-link__item--vk"></li>
+          <li class="social-link__item social-link__item--inst"></li>
+          <li class="social-link__item social-link__item--fb"></li>
+        </ul>
+      </div>
       <div class="wrapper-html-academy html-academy">
         <p class="html-academy__text">HTML Academy</p>
         <a href="#" class="html-academy__link"></a>

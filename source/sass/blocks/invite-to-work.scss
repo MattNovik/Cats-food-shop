@@ -8,11 +8,25 @@
     padding:61px 71px 51px 71px;
   }
   @media (min-width: $desktop-width) {
-    display: none;
+    display: block;
+    position: absolute;
+    top:95px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:100%;
+    min-width:570px;
+    max-width:1440px;
+    height:201px;
+    box-sizing:border-box;
+    padding:0 110px 0 110px;
   }
 }
 .invite-to-work--bc-white {
   background-color: #fff;
+  @media (min-width:$desktop-width) {
+    background-color:transparent;
+  }
 }
 .invite-to-work__wrapper {
   display: flex;
@@ -21,6 +35,13 @@
   @media (min-width: $tablet-width) {
     width:100%;
     max-width:708px;
+  }
+  @media (min-width: $desktop-width) {
+    padding:61px 71px 51px 71px;
+    background:#fff;
+    min-width:570px;
+    box-sizing:border-box;
+    width:50%;
   }
 }
 .invite-to-work__name {
@@ -42,5 +63,8 @@
     width:151px;
     font-size:16px;
     line-height: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    text-align:left;
   }
 }

@@ -28,6 +28,9 @@
     font-size: 20px;
     line-height: 30px;
   }
+  @media (min-width: $desktop-width) {
+    align-items:flex-end;
+  }
 }
 .slider__list-before,
 .slider__list-after {
@@ -48,9 +51,12 @@
     width:590px;
     font-size:20px;
     line-height: 30px;
+    margin: -81px auto 0 auto;
+    padding: 0 0 64px 0;
   }
   @media (min-width:$desktop-width) {
     padding:0;
+    margin:-110px 0 0 auto;
   }
 }
 .slider__toogle-before {
@@ -80,7 +86,12 @@
   }
   @media (min-width:$tablet-width) {
     &:after {
-      content:none;
+      top:2px;
+      left:275px;
+      width:40px;
+      height:40px;
+      background-image: url('../../img/mobile/index/sliderControl.svg');
+      background-color: transparent;
     }
     &:before {
       top:18px;
