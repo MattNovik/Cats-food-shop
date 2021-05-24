@@ -65,16 +65,16 @@
           </div>
         </fieldset>
         <fieldset class="form__item form__item-target form__item--border-bottom">
-          <div class="target target--top-margin">
-            <input type="radio" class="target__lose visually-hidden" id="lose-weight" name="lose-weight" checked>
+          <div class="target target--lose target--top-margin">
+            <input type="radio" class="target__lose target__radio--active visually-hidden" id="lose-weight" name="lose-weight" checked>
             <label for="lose-weight">похудение</label>
           </div>
-          <div class="target">
-            <input type="radio" class="target__get visually-hidden" id="get-weight" name="get-weight">
-            <label for="lose-weight">Набор массы</label>
+          <div class="target target--get">
+            <input type="radio" class="target__get target__radio--active visually-hidden" id="get-weight" name="get-weight">
+            <label for="get-weight">Набор массы</label>
           </div>
-          <div class="target target--bottom-margin">
-            <input type="radio" class="target__unknown visually-hidden" id="unknown" name="unknown">
+          <div class="target target--unknown target--bottom-margin">
+            <input type="radio" class="target__unknown target__radio--active visually-hidden" id="unknown" name="unknown">
             <label for="unknown">Не знаю (Нужен ваш совет)</label>
           </div>
         </fieldset>
@@ -192,7 +192,37 @@
 <script type="text/javascript">
   var navMain = document.querySelector(".main-nav");
   var navToogle = document.querySelector(".main-nav__toogle");
+  var targetLose = document.querySelector(".target--lose");
+  var targetGet = document.querySelector(".target--get");
+  var targetUnknown = document.querySelector(".target__unknown");
+  var targetLoseSec = document.querySelector(".target__lose");
+  var targetGetSec = document.querySelector(".target__get");
+  var targetUnknownSec = document.querySelector(".target__unknown");
 
+  targetLoseSec.classList.remove('target__radio--active');
+  targetGetSec.classList.remove('target__radio--active');
+  targetUnknownSec.classList.remove('target__radio--active');
+  targetLose.addEventListener('click', function() {
+    if (targetLoseSec.classList.contains("target__radio--active")) {
+      targetLoseSec.classList.remove("target__radio--active")
+    } else {
+      targetLoseSec.classList.add("target__radio--active");
+    }
+    });
+  targetUnknown.addEventListener('click', function() {
+    if (targetUnknownSec.classList.contains("target__radio--active")) {
+      targetUnknownSec.classList.remove("target__radio--active")
+    } else {
+      targetUnknownSec.classList.add("target__radio--active");
+    }
+    });
+  targetGet.addEventListener('click', function() {
+    if (targetGetSec.classList.contains("target__radio--active")) {
+      targetGetSec.classList.remove("target__radio--active")
+    } else {
+      targetGetSec.classList.add("target__radio--active");
+    }
+    });
   navMain.classList.remove('main-nav--nojs');
   navToogle.addEventListener('click', function() {
     if (navMain.classList.contains('main-nav--closed')) {
@@ -203,5 +233,6 @@
       navMain.classList.remove('main-nav--opened');
     }
   });
+
 </script>
 </html>

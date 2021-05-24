@@ -36,7 +36,7 @@
 
   &:hover {
     &::before {
-      border: 1px solid #BABABA;
+      border: 1px solid #bababa;
     }
   }
 
@@ -57,7 +57,53 @@
   }
 }
 
-.target__lose+label {
+.target__lose.target__radio--active+label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $basic_green;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: -48px;
+      top: 7px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.target__get.target__radio--active+label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $basic_green;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: -48px;
+      top: 7px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.target__unknown.target__radio--active+label {
   &::after {
     content: "";
     position: absolute;
