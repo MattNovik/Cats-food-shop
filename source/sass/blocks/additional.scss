@@ -68,7 +68,10 @@
   }
 }
 
-.additional__sugar + label {
+.additional__sugar:checked + label,
+.additional__water:checked + label,
+.additional__milk:checked + label,
+.additional__vitamins:checked + label {
   &::after {
     content: "";
     position: absolute;
