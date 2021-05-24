@@ -77,7 +77,7 @@ const copy = () => {
 exports.copy = copy;
 
 const copyImage = () => {
-  return gulp.src("source/img/**/.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(gulp.dest("build/img"))
 }
 
@@ -127,6 +127,7 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
+  copy,
   copyImage,
   gulp.parallel (
     styles,
