@@ -142,20 +142,24 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+
   &:hover {
     background: #ebebeb;
     cursor: pointer;
   }
+
   &:active {
     span {
       opacity: 0.3;
     }
   }
+
   @media (min-width: $tablet-width) {
     width: 248px;
     height: 39px;
     margin: 33px auto 40px auto;
   }
+
   @media (min-width: $desktop-width) {
     width: 160px;
   }

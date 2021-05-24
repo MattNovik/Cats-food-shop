@@ -17,9 +17,9 @@
   }
 }
 
-.target__lose+label,
-.target__get+label,
-.target__unknown+label {
+.target__lose + label,
+.target__get + label,
+.target__unknown + label {
   position: relative;
 
   &::before {
@@ -57,7 +57,7 @@
   }
 }
 
-.target__lose.target__radio--active+label {
+.target__lose.target__radio--active + label {
   &::after {
     content: "";
     position: absolute;
@@ -80,7 +80,7 @@
   }
 }
 
-.target__get.target__radio--active+label {
+.target__get.target__radio--active + label {
   &::after {
     content: "";
     position: absolute;
@@ -103,7 +103,7 @@
   }
 }
 
-.target__unknown.target__radio--active+label {
+.target__unknown.target__radio--active + label {
   &::after {
     content: "";
     position: absolute;

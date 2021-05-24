@@ -7,11 +7,13 @@
   text-transform: uppercase;
   color: #444444;
   position: relative;
+
   & svg {
     position: absolute;
-    top:16px;
-    right:20px;
+    top: 16px;
+    right: 20px;
   }
+
   & label {
     margin: 0 12px 0 0;
     padding: 0;
@@ -23,25 +25,27 @@
     padding: 0 0 0 16px;
     border: 2px solid #e7e7e7;
 
+    &:placeholder {
+      text-transform: uppercase;
+      color: #444444;
+    }
+
     &:focus {
       border: solid 2px #444444;
+
       & svg {
         & path {
           stroke: $basic_green;
         }
+
         & line {
-          stroke:$basic_green;
+          stroke: $basic_green;
         }
       }
     }
   }
 
-  & input::placeholder {
-    text-transform: uppercase;
-    color: #444444;
-  }
-
- /*  &:hover {
+  /*  &:hover {
     & input {
       border: 2px solid #cdcdcd;
     }

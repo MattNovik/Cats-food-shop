@@ -51,11 +51,13 @@
     height: 26px;
     border: solid 1px #cdcdcd;
   }
+
   &:hover {
     &::before {
-      border: 1px solid #BABABA;
+      border: 1px solid #bababa;
     }
   }
+
   @media (min-width: $tablet-width) {
     &::before {
       top: 0;

@@ -204,9 +204,11 @@
       background-image: url("../img/mobile/icon-arrow.svg");
     }
   }
+
   &:active {
     opacity: 0.3;
   }
+
   @media (min-width: $tablet-width) {
     align-items: center;
     margin: 48px 0 53px 52px;
