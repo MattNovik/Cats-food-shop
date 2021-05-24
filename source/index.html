@@ -168,7 +168,11 @@
       </div>
     </section>
     <section class="map">
-      <img src="img/mobile/index/map.jpg" alt="карта компании" width="320" height="360" class="map__image">
+      <div class="map__wrapper">
+        <iframe class="map__image" src="img/mobile/index/mapDesk.jpg"
+              title="iframe Example 1" >
+        </iframe>
+      </div>
     </section>
     <div class="page-footer__additional-info">
       <a href="#" class="page-footer__logo">
@@ -204,19 +208,5 @@
     </div>
   </footer>
 </body>
-<script type="text/javascript">
-  var navMain = document.querySelector(".main-nav");
-  var navToogle = document.querySelector(".main-nav__toogle");
-
-  navMain.classList.remove('main-nav--nojs');
-  navToogle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened')
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-    }
-  });
-</script>
+<script src="js/script.js"></script>
 </html>

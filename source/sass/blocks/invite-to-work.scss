@@ -22,6 +22,7 @@
     height: 201px;
     box-sizing: border-box;
     padding: 0 110px 0 110px;
+    z-index: 100;
   }
 }
 
@@ -49,6 +50,7 @@
     min-width: 570px;
     box-sizing: border-box;
     width: 50%;
+    z-index: 20;
   }
 }
 

@@ -121,7 +121,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  &:hover {
+    background: #5eaa2f;
+    cursor: pointer;
+  }
 
+  &:active {
+    background: #5eaa2f;
+  }
   @media (min-width: $tablet-width) {
     width: 248px;
     height: 39px;

@@ -224,6 +224,14 @@
   color: #ffffff;
   text-align: center;
 
+  &:hover {
+    background: #5eaa2f;
+    cursor: pointer;
+  }
+
+  &:active {
+    background: #5eaa2f;
+  }
   @media (min-width: $tablet-width) {
     width: 282px;
     font-size: 20px;

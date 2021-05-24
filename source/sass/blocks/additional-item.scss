@@ -88,7 +88,14 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+  &:hover {
+    background: #5eaa2f;
+    cursor: pointer;
+  }
 
+  &:active {
+    background: #5eaa2f;
+  }
   @media (min-width: $tablet-width) {
     width: 100%;
     margin: 25px auto 20px 0;

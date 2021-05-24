@@ -27,7 +27,7 @@
 
   &:hover {
     opacity: 0.8;
-
+    cursor: pointer;
     & path {
       fill: $basic_green;
     }
@@ -64,7 +64,7 @@
 
   &:hover {
     opacity: 0.8;
-
+    cursor: pointer;
     & path {
       fill: $basic_green;
     }
@@ -101,7 +101,7 @@
 
   &:hover {
     opacity: 0.8;
-
+    cursor: pointer;
     & path {
       stroke: $basic_green;
     }
