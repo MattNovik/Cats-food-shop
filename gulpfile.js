@@ -126,7 +126,7 @@ const build = gulp.series(
 exports.build = build;
 
 exports.default = gulp.series(
-  s clean,
+  clean,
   copyImage,
   gulp.parallel (
     styles,
