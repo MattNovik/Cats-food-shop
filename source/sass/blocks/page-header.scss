@@ -25,26 +25,26 @@
 }
 
 .page-header__logo-tablet {
-  width: 175px;
+  width: 190px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 0 0 20px;
+  padding: 0 0 17px 20px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     width: 175px;
     height: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     width: 202px;
     height: 59px;
   }
 }
 
 .page-header__logo-image {
-  margin: 0 57px 0 0;
+  margin: 0 67px 0 0;
 
   &:hover {
     opacity: 0.8;
