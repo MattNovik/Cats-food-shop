@@ -22,6 +22,7 @@
 .target__unknown + label {
   position: relative;
   cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;
@@ -79,9 +80,11 @@
     }
   }
 }
+
 .target__lose:disabled + label {
   opacity: 0.3;
 }
+
 .target__get:checked + label {
   &::after {
     content: "";
@@ -104,9 +107,11 @@
     }
   }
 }
+
 .target__get:disabled + label {
   opacity: 0.3;
 }
+
 .target__unknown:checked + label {
   &::after {
     content: "";
@@ -129,9 +134,11 @@
     }
   }
 }
+
 .target__unknown:disabled + label {
   opacity: 0.3;
 }
+
 .target--top-margin {
   margin-top: 22px;
 

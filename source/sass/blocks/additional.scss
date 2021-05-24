@@ -54,6 +54,7 @@
 
   &:hover {
     cursor: pointer;
+
     &::before {
       border: 1px solid #bababa;
     }
@@ -92,6 +93,7 @@
     }
   }
 }
+
 .additional__sugar:disabled + label,
 .additional__water:disabled + label,
 .additional__milk:disabled + label,
