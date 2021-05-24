@@ -92,3 +92,9 @@
     }
   }
 }
+.additional__sugar:disabled + label,
+.additional__water:disabled + label,
+.additional__milk:disabled + label,
+.additional__vitamins:disabled + label {
+  opacity: 0.3;
+}
