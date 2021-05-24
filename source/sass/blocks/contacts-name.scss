@@ -2,33 +2,37 @@
   position: relative;
   font-size: 24px;
   line-height: 26px;
-  padding:0 115px 0 20px;
-  box-sizing:border-box;
-  max-width:410px;
-  margin:0 auto 0 auto;
-  background-color: #fff;
+  padding: 0 115px 0 20px;
+  box-sizing: border-box;
+  max-width: 410px;
+  margin: 0 auto 0 auto;
+  background-color: #ffffff;
   z-index: 120;
-  &:after {
+
+  &::after {
     content: "";
     position: absolute;
-    right:0;
-    top:25px;
-    height:2px;
-    width:calc(100% - 217px);
+    right: 0;
+    top: 25px;
+    height: 2px;
+    width: calc(100% - 217px);
     background-color: $basic_green;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding:0 0 38px 69px;
-    max-width:708px;
-    &:after {
-      width:calc(100% - 630px);
+    padding: 0 0 38px 69px;
+    max-width: 708px;
+
+    &::after {
+      width: calc(100% - 630px);
     }
   }
+
   @media (min-width: $desktop-width) {
-    max-width:1330px;
-    margin: 69px auto 0px auto;
-    padding:0 0 0 55px;
+    max-width: 1330px;
+    margin: 69px auto 0 auto;
+    padding: 0 0 0 55px;
   }
 }

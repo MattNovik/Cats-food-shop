@@ -1,0 +1,15 @@
+.social-link-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 0 20px;
+  height: 63px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: solid 1px #d9d9d9;
+  border-top: solid 1px #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}

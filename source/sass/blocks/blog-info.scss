@@ -8,12 +8,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width:1440px;
+    max-width: 1440px;
     flex-direction: row;
     justify-content: space-between;
     margin: 82px auto 0 auto;
-    padding:0 110px;
-    box-sizing:border-box;
+    padding: 0 110px;
+    box-sizing: border-box;
   }
 }
 
@@ -22,29 +22,30 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width:410px;
+  max-width: 410px;
   height: 266px;
   background: $basic_grey;
-  margin:0 auto;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     height: 372px;
-    max-width:708px;
-    margin:0 auto;
+    max-width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     height: 374px;
-    margin:0;
+    margin: 0;
   }
 }
 
-.blog-info__item+.blog-info__item {
+.blog-info__item + .blog-info__item {
   margin: 20px auto 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 30px auto 0 auto;
-    max-width:708px;
+    max-width: 708px;
   }
 
   @media (min-width: $desktop-width) {

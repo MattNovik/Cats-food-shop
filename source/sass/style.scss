@@ -4,7 +4,6 @@
 @import "global.scss";
 @import "variables.scss";
 @import "blocks/page.scss";
-@import "blocks/after-image.scss";
 @import "blocks/before-after.scss";
 @import "blocks/before-image.scss";
 @import "blocks/blog-info.scss";
@@ -12,7 +11,6 @@
 @import "blocks/how-it-work.scss";
 @import "blocks/html-academy.scss";
 @import "blocks/invite-to-work.scss";
-@import "blocks/logo-image-2.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/map.scss";
 @import "blocks/numbers.scss";
@@ -26,6 +24,7 @@
 @import "blocks/social-link.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/wrapper-html-academy.scss";
+@import "blocks/social-link-wrapper.scss";
 
 /* form.html */
 
@@ -44,6 +43,7 @@
 
 @import "blocks/catalog.scss";
 @import "blocks/catalog-item.scss";
+@import "blocks/catalog-name.scss";
 @import "blocks/table-item.scss";
 @import "blocks/show-more.scss";
 @import "blocks/additional-products.scss";

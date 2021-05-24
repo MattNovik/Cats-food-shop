@@ -1,71 +1,85 @@
 .main-nav {
   display: flex;
-  flex-grow:1;
-  @media (min-width:$tablet-width) {
-    height:51px;
-    justify-content:flex-end;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 51px;
+    justify-content: flex-end;
   }
 }
-.main-nav--nojs .main-nav__toogle{
+
+.main-nav--nojs .main-nav__toogle {
   display: none;
 }
+
 .main-nav--nojs .site-list {
-  position:static;
+  position: static;
   min-height: 0;
 }
+
 .main-nav__toogle {
   position: absolute;
-  display: block;
-  top:10px;
-  right:24px;
+  top: 10px;
+  right: 24px;
   display: flex;
-  align-items:center;
-  background:none;
-  margin:0;
-  padding:0;
-  border:none;
+  align-items: center;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
   outline: none;
   cursor: pointer;
   z-index: 10;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
+
 .main-nav__toogle::before {
   content: "";
   position: absolute;
-  top:15px;
-  left:-24px;
-  width:24px;
-  height:2px;
-  background-color: #000;
-  box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+  top: 15px;
+  left: -24px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
+
 .main-nav--opened .main-nav__toogle {
   &::before {
     content: "";
     position: absolute;
-    top:24px;
-    left:-24px;
-    width:24px;
-    height:1.5px;
-    background: #000;
-    transform:rotate(45deg);
+    top: 24px;
+    left: -24px;
+    width: 24px;
+    height: 1.5px;
+    background: #000000;
+    transform: rotate(45deg);
     box-shadow: none;
   }
-    &::after {
+
+  &::after {
     content: "";
     position: absolute;
-    top:24px;
-    left:-24px;
-    width:24px;
-    height:1.5px;
-    background: #000;
-    transform:rotate(-45deg);
+    top: 24px;
+    left: -24px;
+    width: 24px;
+    height: 1.5px;
+    background: #000000;
+    transform: rotate(-45deg);
   }
 }
+
 .main-nav--closed .site-list {
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+}
+
+.main-nav--closed.main-nav--nojs .site-list {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
   }
 }
