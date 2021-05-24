@@ -2,69 +2,81 @@
   height: 114px;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   padding: 28px 20px;
+
   @media (min-width: $tablet-width) {
-    padding:61px 71px 51px 71px;
+    padding: 61px 71px 51px 71px;
   }
+
   @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
-    top:95px;
-    left:0;
-    right:0;
-    margin:0 auto;
-    width:100%;
-    min-width:570px;
-    max-width:1440px;
-    height:201px;
-    box-sizing:border-box;
-    padding:0 110px 0 110px;
+    top: 95px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 570px;
+    max-width: 1440px;
+    height: 201px;
+    box-sizing: border-box;
+    padding: 0 110px 0 110px;
   }
 }
+
 .invite-to-work--bc-white {
-  background-color: #fff;
-  @media (min-width:$desktop-width) {
-    background-color:transparent;
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
   }
 }
+
 .invite-to-work__wrapper {
   display: flex;
   justify-content: space-between;
-  max-width:410px;
+  max-width: 410px;
+
   @media (min-width: $tablet-width) {
-    width:100%;
-    max-width:708px;
+    width: 100%;
+    max-width: 708px;
   }
+
   @media (min-width: $desktop-width) {
-    padding:61px 71px 51px 71px;
-    background:#fff;
-    min-width:570px;
-    box-sizing:border-box;
-    width:50%;
+    padding: 61px 71px 51px 71px;
+    background: #ffffff;
+    min-width: 570px;
+    box-sizing: border-box;
+    width: 50%;
   }
 }
+
 .invite-to-work__name {
-  font-size:16px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
-    width:171px;
-    font-size:20px;
+    width: 171px;
+    font-size: 20px;
     line-height: 21px;
   }
 }
+
 .invite-to-work__adress {
-  font-size:14px;
+  font-size: 14px;
   line-height: 20px;
-  color:$special__dark-gray;
+  color: $special__dark-gray;
+
   @media (min-width: $tablet-width) {
     text-align: right;
-    width:151px;
-    font-size:16px;
+    width: 151px;
+    font-size: 16px;
     line-height: 20px;
   }
+
   @media (min-width: $desktop-width) {
-    text-align:left;
+    text-align: left;
   }
 }

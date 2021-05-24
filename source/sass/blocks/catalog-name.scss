@@ -1,25 +1,25 @@
-.page-main__name {
-  margin: 27px auto 0 auto;
-  padding: 0 0 0 20px;
+.catalog-name {
+  display: flex;
   font-size: 36px;
   line-height: 36px;
+  margin: 27px auto 0 auto;
+  padding: 0 0 41px 20px;
   max-width: 410px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    padding: 0 0 24px 20px;
+    margin: 65px auto 0 auto;
     font-size: 60px;
     line-height: 60px;
-    padding: 65px 0 0 70px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    border-bottom: none;
     max-width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
     max-width: 1440px;
+    padding: 0 110px 24px 110px;
+    margin: 74px auto 0 auto;
     box-sizing: border-box;
-    margin: 73px auto 0 auto;
-    padding: 0 0 0 110px;
   }
 }

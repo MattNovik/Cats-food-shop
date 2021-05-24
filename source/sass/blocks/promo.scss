@@ -1,7 +1,7 @@
 .promo {
   position: relative;
   width: 100%;
-  color: #fff;
+  color: #ffffff;
 
   @media (min-width: $desktop-width) {
     height: 585px;
@@ -15,13 +15,15 @@
   justify-content: center;
   margin: 0 20px;
   z-index: 10;
-  @media (min-width:$tablet-width) {
-    max-width:708px;
-    margin:0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    margin: 0 auto;
   }
+
   @media (min-width: $desktop-width) {
-    max-width:1440px;
-    margin:0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -30,7 +32,7 @@
   text-align: center;
   font-size: 36px;
   line-height: 36px;
-  max-width:300px;
+  max-width: 300px;
 
   @media (min-width: $tablet-width) {
     width: 414px;
@@ -38,8 +40,8 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    color: #000;
-    max-width:none;
+    color: #000000;
+    max-width: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +61,7 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    color: #000;
+    color: #000000;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,19 +71,21 @@
 
 .promo__image {
   margin: 25px auto 0 auto;
-  @media (min-width:$tablet-width) {
-    width:709px;
-    height:609px;
-    padding:0 0 0 20px;
-    box-sizing:border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
   }
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     position: absolute;
-    top:0;
-    left:545px;
-    width:552px;
-    max-width:552px;
-    height:499px;
+    top: 0;
+    left: 545px;
+    width: 552px;
+    max-width: 552px;
+    height: 499px;
   }
 }
 
@@ -94,9 +98,17 @@
   margin: 3px auto 0 auto;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   background: $basic_green;
-
+  &:hover {
+    background: #5eaa2f;
+  }
+  &:active {
+    background: #5eaa2f;
+    span {
+      opacity:0.3;
+    }
+  }
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 284px;
@@ -105,7 +117,7 @@
     height: 54px;
     font-size: 20px;
     line-height: 20px;
-    margin:22px auto 0 auto;
+    margin: 22px auto 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,13 +132,15 @@
   right: 0;
   width: 100%;
   height: 302px;
-  background-image: url("../../img/mobile/index/catBackMainMobileRes.png");
+  background-image: url("../img/mobile/index/catBackMainMobileRes.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   z-index: 1;
+
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/mobile/index/catBackMainMobileRes@2.png");
+    background-image: url("../img/mobile/index/catBackMainMobileRes@2.png");
   }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -134,9 +148,9 @@
   @media (min-width: $desktop-width) {
     display: none;
     top: -117px;
-    right:auto;
-    left:50%;
-    width:calc(100% - 50%);
+    right: auto;
+    left: 50%;
+    width: calc(100% - 50%);
     height: 694px;
   }
 }

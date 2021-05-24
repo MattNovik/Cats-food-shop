@@ -1,13 +1,39 @@
 .html-academy__text {
-  padding:0;
+  padding: 0;
   position: relative;
   font-size: 16px;
   line-height: 18px;
   color: $special__dark-gray;
-  @media (min-width:$tablet-width) {
-    margin:0 50px 0 0;
-   height:22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 50px 0 0;
+    height: 22px;
     line-height: 22px;
   }
 }
 
+.html-academy {
+  & svg {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 27px;
+    height: 33px;
+  }
+}
+
+.html-academy__link {
+  &:hover {
+    opacity: 0.8;
+
+    & svg {
+      & path {
+        fill: $basic_green;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

@@ -1,75 +1,88 @@
 .additional {
-  height:26px;
+  height: 26px;
   margin: 0 0 15px 20px;
+
   & label {
-    margin:0 0 0 44px;
+    margin: 0 0 0 44px;
     font-size: 16px;
     line-height: 26px;
     text-transform: uppercase;
   }
-  & input {
 
-  }
   &:last-child {
-    margin:0 0 0 20px;
+    margin: 0 0 0 20px;
   }
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 0px;
+    margin: 0 0 0 0;
+
     &:last-child {
-      margin: 0 0 0 0px;
+      margin: 0 0 0 0;
     }
+
     & label {
       font-size: 20px;
       line-height: 30px;
-      margin:0 0 0 59px;
+      margin: 0 0 0 59px;
     }
   }
+
   @media (min-width: $desktop-width) {
-    height:40px;
+    height: 40px;
+
     & label {
       line-height: 40px;
     }
   }
 }
-.additional__sugar+label,
-.additional__water+label,
-.additional__milk+label,
-.additional__vitamins+label {
+
+.additional__sugar + label,
+.additional__water + label,
+.additional__milk + label,
+.additional__vitamins + label {
   position: relative;
-  &:before {
+
+  &::before {
     content: "";
     position: absolute;
-    top:0;
-    left:-44px;
-    width:26px;
-    height:26px;
-    border:solid 1px #CDCDCD;
+    top: 0;
+    left: -44px;
+    width: 26px;
+    height: 26px;
+    border: solid 1px #cdcdcd;
   }
-  @media (min-width:$tablet-width) {
-    &:before {
-      top:0;
-      left:-59px;
-      width:40px;
-      height:40px;
+  &:hover {
+    &::before {
+      border: 1px solid #BABABA;
+    }
+  }
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 0;
+      left: -59px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
-.additional__sugar+label {
-  &:after {
+
+.additional__sugar + label {
+  &::after {
     content: "";
     position: absolute;
-    left:-38px;
-    top:8px;
-    width:18px;
-    height:14px;
-    background-image: url('../../img/mobile/icon-agree.svg');
+    left: -38px;
+    top: 8px;
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/mobile/icon-agree.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  @media (min-width:$tablet-width) {
-    &:after {
-      left:-46px;
-      top:15px;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: -46px;
+      top: 15px;
     }
   }
 }

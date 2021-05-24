@@ -1,28 +1,31 @@
 .page-body.page-body--bg {
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
-    &:before {
+
+    &::before {
       content: "";
       position: absolute;
-      top:0;
-      right:0;
-      width:50%;
-      height:694px;
-      background-image: url("../../img/mobile/index/catBackMainDeskRes.png");
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/mobile/index/catBackMainDeskRes.png");
       background-repeat: no-repeat;
       background-size: cover;
+
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/mobile/index/catBackMainDeskRes@2.png");
+        background-image: url("../img/mobile/index/catBackMainDeskRes@2.png");
       }
     }
-    &:after {
+
+    &::after {
       content: "";
       position: absolute;
-      top:0;
-      right:0;
-      width:50%;
-      height:694px;
-      background-color:  rgba(104, 183, 56, 0.85);
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background-color: rgba(104, 183, 56, 0.85);
     }
   }
 }

@@ -1,77 +1,97 @@
 .target {
-  height:30px;
-  margin:0 auto 13px auto;
+  height: 30px;
+  margin: 0 auto 13px auto;
   padding: 0 0 0 65px;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  max-width:410px;
-  box-sizing:border-box;
+  max-width: 410px;
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
-    font-size:  20px;
+    font-size: 20px;
     line-height: 30px;
-    margin:18px 0 0 0;
-    padding:0 0 0 88px;
-    max-width:none;
+    margin: 18px 0 0 0;
+    padding: 0 0 0 88px;
+    max-width: none;
   }
 }
+
 .target__lose+label,
 .target__get+label,
 .target__unknown+label {
-  position:relative;
-  &:before {
+  position: relative;
+
+  &::before {
     content: "";
     position: absolute;
-    left:-45px;
-    top:-2px;
-    width:30px;
-    height:30px;
+    left: -45px;
+    top: -2px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     box-sizing: border-box;
   }
-  @media  (min-width:$tablet-width) {
-    &:before {
-      left:-60px;
-      top:-5px;
-      width:40px;
-      height:40px;
+
+  &:hover {
+    &::before {
+      border: 1px solid #BABABA;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: -60px;
+      top: -5px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
-      border: 1px solid #CDCDCD;
+      border: 1px solid #cdcdcd;
       box-sizing: border-box;
     }
   }
 }
+
 .target__lose+label {
-  &:after {
+  &::after {
     content: "";
     position: absolute;
-    left:-36px;
-    top:6px;
-    width:13px;
-    height:13px;
+    left: -36px;
+    top: 6px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: $basic_green;
     box-sizing: border-box;
   }
-  @media (min-width:$tablet-width) {
-    &:after {
-      left:-48px;
-      top:7px;
-      width:18px;
-      height:18px;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: -48px;
+      top: 7px;
+      width: 18px;
+      height: 18px;
     }
   }
 }
+
 .target--top-margin {
-  margin-top:22px;
+  margin-top: 22px;
+
   @media (min-width: $tablet-width) {
-    margin-top:25px;
+    margin-top: 25px;
   }
 }
+
 .target--bottom-margin {
-  margin-bottom:19px;
+  margin-bottom: 19px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom:25px;
+    margin-bottom: 25px;
   }
 }
