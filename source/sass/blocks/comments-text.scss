@@ -7,12 +7,16 @@
   max-width: 375px;
   margin: 38px auto 0 auto;
   max-height: 150px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 
   &::placeholder {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     margin: 0 auto;
+    color: #444444;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,6 +24,8 @@
     padding: 8px 0 0 19px;
     max-width: 630px;
     max-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
 
     &::placeholder {
       font-size: 20px;

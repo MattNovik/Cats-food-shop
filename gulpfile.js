@@ -66,7 +66,7 @@ const copy = () => {
   return gulp.src([
       "source/fonts/*.{woff2,woff}",
       "source/manifest.webmanifest",
-      'source/css/normolize.css',
+      "source/css/normolize.css",
     ], {
       base: "source"
     })
