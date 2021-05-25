@@ -65,6 +65,7 @@
       width: 100%;
       min-width: 436px;
       height: 52px;
+      box-sizing: border-box;
     }
   }
 }
@@ -88,9 +89,39 @@
     padding: 0 22px 0 0;
     max-width: 569px;
 
+    & input {
+      min-width: 506px;
+      width: 506px;
+    }
+
     & label {
       margin: 0 10px 0 0;
       padding: 0;
+    }
+  }
+}
+
+.cat-info:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    & label {
+      margin: 0 18px 0 0;
+    }
+
+    & input {
+      min-width: 475px;
+    }
+  }
+}
+
+.cat-info:last-child {
+  @media (min-width: $desktop-width) {
+    & label {
+      margin: 0 17px 0 0;
+    }
+
+    & input {
+      min-width: 436px;
+      max-width: 436px;
     }
   }
 }
