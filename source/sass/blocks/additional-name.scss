@@ -12,27 +12,32 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 12px;
+    top: 14px;
     height: 2px;
-    width: calc(100% - 185px);
+    width: calc(100% - 182px);
     background-color: $basic_green;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 0 38px 69px;
+    padding: 0 0 38px 39px;
     max-width: 708px;
 
     &::after {
-      top: 25px;
-      width: calc(100% - 340px);
+      top: 20px;
+      width: calc(100% - 290px);
     }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1330px;
-    margin: 69px auto 0 auto;
+    margin: 65px auto 0 auto;
     padding: 0 0 0 55px;
+
+    &::after {
+      top: 23px;
+      width: calc(100% - 290px);
+    }
   }
 }

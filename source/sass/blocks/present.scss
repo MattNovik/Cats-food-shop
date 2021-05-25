@@ -1,8 +1,8 @@
 .present {
   position: relative;
-  height: 280px;
+  height: 289px;
   max-width: 410px;
-  margin: 40px auto 35px auto;
+  margin: 35px auto 35px auto;
   border: solid 1px transparent;
   background-image: url("../img/mobile/catalog/gift-photo-mobile.png");
   background-size: 100% 100%;
@@ -30,17 +30,17 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: flex-end;
-    margin: 40px auto 76px auto;
+    margin: 70px auto 76px auto;
     height: 200px;
     max-width: 708px;
     box-sizing: border-box;
-    background-size: 686px auto;
+    background-size: 708px auto;
     background-position: top right;
     background-image: url("../img/mobile/catalog/gift-photo-tablet.png");
 
     &::before {
-      top: 96px;
-      left: 146px;
+      top: 97px;
+      left: 117px;
     }
 
     @media (min-resolution: 2dppx) {
@@ -71,7 +71,7 @@
 .present__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 60%;
+    width: 57%;
     align-items: center;
     margin: 0 0 0 0;
   }
@@ -94,6 +94,7 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    width:170px;
     text-align: left;
     margin: 0 auto;
   }

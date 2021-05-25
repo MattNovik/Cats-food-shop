@@ -13,26 +13,33 @@
     content: "";
     position: absolute;
     right: 0;
-    top: 25px;
+    top: 15px;
     height: 2px;
-    width: calc(100% - 217px);
+    width: calc(100% - 220px);
     background-color: $basic_green;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 0 38px 69px;
+    padding: 0 0 38px 39px;
     max-width: 708px;
+    margin:49px auto 0 auto;
 
     &::after {
-      width: calc(100% - 630px);
+      top:21px;
+      width: calc(100% - 595px);
     }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1330px;
-    margin: 69px auto 0 auto;
+    margin: 40px auto 0 auto;
     padding: 0 0 0 55px;
+
+    &::after {
+      top:21px;
+      width: calc(100% - 585x);
+    }
   }
 }

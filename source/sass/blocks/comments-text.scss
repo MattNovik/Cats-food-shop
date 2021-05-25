@@ -3,9 +3,10 @@
   justify-content: space-between;
   width: calc(100% - 40px);
   box-sizing: border-box;
-  padding: 9px 12px 0 15px;
+  padding: 9px 12px 0 14px;
   max-width: 375px;
   margin: 38px auto 0 auto;
+  max-height:150px;
 
   &::placeholder {
     font-size: 16px;
@@ -16,8 +17,9 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 139px);
-    padding: 10px 0 0 19px;
-    max-width: 570px;
+    padding: 8px 0 0 19px;
+    max-width: 630px;
+    max-height:174px;
 
     &::placeholder {
       font-size: 20px;
@@ -29,6 +31,7 @@
     width: calc(100% - 220px);
     max-width: 1220px;
     box-sizing: border-box;
-    padding: 10px 0 0 19px;
+    padding: 8px 0 0 19px;
+    margin: 30px auto 0 auto;
   }
 }

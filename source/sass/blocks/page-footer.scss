@@ -14,7 +14,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    height: 149px;
+    height: 130px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 .page-footer__logo {
   width: 100%;
   text-align: center;
-  margin: 39px 20px 28px 20px;
+  margin: 41px 20px 28px 20px;
 
   & img {
     &:hover {

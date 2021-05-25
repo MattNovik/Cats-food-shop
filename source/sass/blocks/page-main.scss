@@ -1,15 +1,16 @@
 .page-main__name {
-  margin: 27px auto 0 auto;
+  margin: 29px auto 0 auto;
   padding: 0 0 0 20px;
   font-size: 36px;
   line-height: 36px;
   max-width: 410px;
   box-sizing: border-box;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 65px 0 0 70px;
+    padding: 54px 0 0 38px;
     margin: 0 auto;
     box-sizing: border-box;
     max-width: 708px;
@@ -19,7 +20,7 @@
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    margin: 73px auto 0 auto;
+    margin: 65px auto 0 auto;
     padding: 0 0 0 110px;
   }
 }
