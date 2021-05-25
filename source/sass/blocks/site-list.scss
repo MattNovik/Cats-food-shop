@@ -28,8 +28,11 @@
   align-items: center;
   justify-content: center;
   border-top: solid 1px #e6e6e6;
-  height: 66px;
-
+  height: 65px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size:20px;
+  line-height: 20px;
+  font-weight: 500;
   &:hover {
     opacity: 0.6;
   }
@@ -39,13 +42,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: flex-start;
     border-top: none;
     border-bottom: solid 2px transparent;
     height: 36px;
+    font-size:18px;
+    line-height: 24px;
   }
 
   a {
+    font-size:18px;
+    line-height: 36px;
+    font-weight: 400;
     @media (min-width: $desktop-width) {
       font-size: 20px;
       line-height: 30px;

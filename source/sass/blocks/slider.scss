@@ -6,6 +6,7 @@
     background: #eaeaea;
     max-width: none;
     margin: 0;
+    padding:0 0 40px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,37 +46,38 @@
 }
 
 .slider__toogle-wrapper {
-  margin: 23px auto 0 auto;
-  padding: 0 0 25px 0;
+  margin: 44px auto 0 auto;
+  padding: 0 13px 25px 19px;
   height: 40px;
   width: 228px;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-
+  box-sizing:border-box;
   @media (min-width: $tablet-width) {
     width: 590px;
     font-size: 20px;
     line-height: 30px;
-    margin: -81px auto 0 auto;
-    padding: 0 0 64px 0;
+    margin: -78px auto 0 auto;
+    padding: 0 10px 64px 10px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 0 0 20px;
     margin: -110px 0 0 auto;
   }
 }
 
 .slider__toogle-before {
   position: relative;
+  height:35px;
   line-height: 40px;
 
   &::after {
     content: "";
     position: absolute;
     top: 16px;
-    left: 76px;
+    left: 60px;
     width: 35px;
     height: 6px;
     background: #68b738;
@@ -87,7 +89,7 @@
     content: "";
     position: absolute;
     top: 12px;
-    left: 70px;
+    left: 55px;
     width: 84px;
     height: 14px;
     background: #ffffff;
@@ -115,7 +117,7 @@
 
     &::after {
       top: 5px;
-      left: 278px;
+      left: 268px;
       width: 34px;
       height: 34px;
       border-radius: 50%;
@@ -135,6 +137,7 @@
 
 .slider__toogle-after {
   position: relative;
+  height:35px;
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
@@ -148,7 +151,7 @@
       content: "";
       position: absolute;
       top: 18px;
-      left: -248px;
+      left: -238px;
       width: 8px;
       height: 8px;
       border-radius: 50%;

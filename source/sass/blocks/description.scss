@@ -4,15 +4,15 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-
   @media (min-width: $tablet-width) {
-    margin: 77px 0 0 52px;
+    margin: 74px 0 0 53px;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 77px 0 0 214px;
+    margin: 60px 0 0 214px;
   }
 }
 
@@ -21,7 +21,7 @@
     content: "";
     position: absolute;
     left: -69px;
-    top: -6px;
+    top: -7px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -31,8 +31,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: -67px;
-    top: -8px;
+    left: -70px;
+    top: -9px;
     width: 50px;
     height: 50px;
     background-image: url("../img/mobile/index/cat-slim.svg");
@@ -45,7 +45,7 @@
       content: "";
       position: absolute;
       left: 395px;
-      top: -6px;
+      top: 15px;
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -55,10 +55,10 @@
     &::after {
       content: "";
       position: absolute;
-      left: 410px;
-      top: -20px;
-      width: 160px;
-      height: 200px;
+      left: 414px;
+      top: 3px;
+      width: 155px;
+      height: 195px;
       background-size: 160px 200px;
     }
   }
@@ -67,15 +67,15 @@
     &::before {
       content: "";
       left: -162px;
-      top: -36px;
+      top: -29px;
       width: 100px;
-      height: 106px;
+      height: 100px;
     }
 
     &::after {
       content: "";
       left: -162px;
-      top: -42px;
+      top: -38px;
       width: 100px;
       height: 106px;
       background-image: url("../img/mobile/index/cat-slim.svg");
@@ -101,8 +101,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: -85px;
-    top: -8px;
+    left: -82px;
+    top: -7px;
     width: 75px;
     height: 50px;
     background-image: url("../img/mobile/index/cat-pro.svg");
@@ -115,7 +115,7 @@
       content: "";
       position: absolute;
       left: 395px;
-      top: -6px;
+      top: 15px;
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -126,7 +126,7 @@
       content: "";
       position: absolute;
       left: 360px;
-      top: 40px;
+      top: 60px;
       width: 268px;
       height: 112px;
       background-size: 268px 112px;
@@ -137,47 +137,57 @@
     &::before {
       content: "";
       left: -162px;
-      top: -36px;
+      top: -29px;
       width: 100px;
-      height: 106px;
+      height: 100px;
     }
 
     &::after {
       content: "";
-      left: -190px;
-      top: -22px;
-      width: 154px;
+      left: -184px;
+      top: -17px;
+      width: 140px;
       height: 75px;
-      background-size: 154px 75px;
+      background-size: 140px 75px;
     }
   }
 }
 
 .description__info {
-  margin: 22px 48px 0 20px;
+  margin: 29px 30px 0 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $special__dark-gray;
 
   @media (min-width: $tablet-width) {
-    margin: 24px 277px 0 52px;
+    margin: 25px 277px 0 52px;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 73px 51px 0 52px;
+    margin: 75px 51px 0 52px;
   }
 }
+.description--fat {
+  .description__info {
+    @media (min-width: $tablet-width) {
+      margin:25px 315px 0 52px;
+    }
 
+    @media (min-width: $desktop-width) {
+      margin: 75px 51px 0 52px;
+    }
+  }
+}
 .description__link {
   position: relative;
   display: flex;
   align-items: flex-end;
   height: 39px;
-  margin: 23px 20px 18px 20px;
+  margin: 20px 20px 20px 20px;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
@@ -208,20 +218,20 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    margin: 48px 0 53px 52px;
+    margin: 52px 0 77px 52px;
     border-top: none;
     font-size: 20px;
     line-height: 30px;
 
     &::after {
       left: 133px;
-      bottom: 15px;
+      bottom: 12px;
       width: 32px;
       height: 10px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin: 23px 0 55px 52px;
+    margin: 23px 0 70px 52px;
   }
 }

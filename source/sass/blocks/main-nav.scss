@@ -20,7 +20,7 @@
 .main-nav__toogle {
   position: absolute;
   top: 10px;
-  right: 24px;
+  right: 20px;
   display: flex;
   align-items: center;
   background: none;
@@ -51,8 +51,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 24px;
-    left: -24px;
+    top: 20px;
+    left: -20px;
     width: 24px;
     height: 1.5px;
     background: #000000;
@@ -63,8 +63,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: -24px;
+    top: 20px;
+    left: -20px;
     width: 24px;
     height: 1.5px;
     background: #000000;

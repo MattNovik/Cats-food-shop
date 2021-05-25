@@ -36,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     width: 414px;
-    margin: 62px 0 0 117px;
+    margin: 54px 0 0 86px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -45,7 +45,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 111px 0 0 190px;
+    margin: 100px 0 0 190px;
   }
 }
 
@@ -57,7 +57,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 45px 0 0 117px;
+    margin: 40px 0 0 87px;
     text-align: left;
     font-size: 20px;
     line-height: 20px;
@@ -70,7 +70,7 @@
 }
 
 .promo__image-wrapper {
-  margin: 0 auto;
+  margin: 5px auto 0 auto;
 }
 
 .promo__image {
@@ -79,14 +79,15 @@
   @media (min-width: $tablet-width) {
     width: 709px;
     height: 609px;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 0;
     box-sizing: border-box;
+    margin:15px auto 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
-    left: 545px;
+    left: 555px;
     width: 552px;
     max-width: 552px;
     height: 499px;
@@ -99,12 +100,13 @@
   align-items: center;
   width: 280px;
   height: 40px;
-  margin: 3px auto 0 auto;
+  margin: 0 auto 0 auto;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   background: $basic_green;
-
+  font-size: 14px;
+  list-height:20px;
   &:hover {
     background: #5eaa2f;
   }
@@ -119,8 +121,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 284px;
-    left: 117px;
+    top: 260px;
+    left: 83px;
     width: 244px;
     height: 54px;
     font-size: 20px;
@@ -129,7 +131,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 343px;
+    top: 310px;
     left: 190px;
   }
 }

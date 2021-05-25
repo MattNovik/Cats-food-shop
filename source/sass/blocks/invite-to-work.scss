@@ -3,10 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 28px 20px;
+  padding: 28px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 71px 51px 71px;
+    padding: 53px 71px 33px 71px;
+    background: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +24,7 @@
     box-sizing: border-box;
     padding: 0 110px 0 110px;
     z-index: 100;
+    background-color: transparent;
   }
 }
 
@@ -42,6 +44,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     max-width: 708px;
+    margin:-4px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,26 +59,43 @@
 
 .invite-to-work__name {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
+  font-weight: normal;
+  margin:14px 0 0 0;
 
   @media (min-width: $tablet-width) {
     width: 171px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
+    margin:0 0 0 0;
   }
 }
 
 .invite-to-work__adress {
   font-size: 14px;
   line-height: 20px;
+  font-weight: normal;
+  font-family: "Arial", sans-serif;
   color: $special__dark-gray;
-
+  padding:0 0 0 23px;
   @media (min-width: $tablet-width) {
-    text-align: right;
-    width: 151px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-end;
+    width: 160px;
     font-size: 16px;
     line-height: 20px;
+    margin:0;
+    height:84px;
+    p {
+      text-align:right;
+      margin:0;
+    }
+    p:last-child {
+      margin-bottom:5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
