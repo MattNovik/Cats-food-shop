@@ -6,7 +6,7 @@
     background: #eaeaea;
     max-width: none;
     margin: 0;
-    padding:0 0 40px 0;
+    padding: 0 0 40px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,7 +53,8 @@
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  box-sizing:border-box;
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     width: 590px;
     font-size: 20px;
@@ -70,7 +71,7 @@
 
 .slider__toogle-before {
   position: relative;
-  height:35px;
+  height: 35px;
   line-height: 40px;
 
   &::after {
@@ -137,7 +138,7 @@
 
 .slider__toogle-after {
   position: relative;
-  height:35px;
+  height: 35px;
   line-height: 40px;
 
   @media (min-width: $tablet-width) {

@@ -27,6 +27,7 @@
   margin: 0;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -105,6 +106,7 @@
   @media (min-width: $desktop-width) {
     width: 230px;
     min-width: 245px;
+
     &:nth-child(3),
     &:last-child {
       margin: 0 0 0 0;
@@ -160,7 +162,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      right:15px;
+      right: 15px;
       content: "1";
     }
   }
@@ -208,6 +210,10 @@
   font-size: 14px;
   line-height: 129%;
   color: $special__dark-gray;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 111px 0 0 0;

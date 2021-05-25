@@ -9,17 +9,18 @@
   position: relative;
 
   &:last-child {
-    margin:14px 0 0 0;
+    margin: 14px 0 0 0;
 
-      & label {
-        margin: 0 9px 0 0;
-        padding: 0;
-      }
-      & svg {
-        position: absolute;
-        top: 13px;
-        right: 14px;
-      }
+    & label {
+      margin: 0 9px 0 0;
+      padding: 0;
+    }
+
+    & svg {
+      position: absolute;
+      top: 13px;
+      right: 14px;
+    }
   }
 
   & svg {
@@ -32,6 +33,7 @@
     margin: 0 14px 0 0;
     padding: 0;
   }
+
   & input::placeholder {
     text-transform: uppercase;
     color: #444444;
@@ -42,7 +44,8 @@
     height: 41px;
     padding: 0 0 0 15px;
     border: 2px solid #e7e7e7;
-    box-sizing:box-border;
+    box-sizing: box-border;
+
     &:focus {
       border: solid 2px #444444;
 
@@ -69,7 +72,7 @@
     margin: 36px 35px 0 41px;
 
     & input {
-      height:50px;
+      height: 50px;
       padding: 0 0 0 22px;
     }
 
@@ -77,26 +80,30 @@
       margin: 0 23px 0 0;
       padding: 0;
     }
+
     & svg {
       position: absolute;
       top: 18px;
       right: 18px;
     }
+
     &:last-child {
       margin: 18px 35px 0 38px;
 
-        & input {
-          padding: 0 0 0 20px;
-        }
-        & label {
-          margin: 0 15px 0 0;
-          padding: 0;
-        }
-        & svg {
-          position: absolute;
-          top: 16px;
-          right: 17px;
-        }
+      & input {
+        padding: 0 0 0 20px;
+      }
+
+      & label {
+        margin: 0 15px 0 0;
+        padding: 0;
+      }
+
+      & svg {
+        position: absolute;
+        top: 16px;
+        right: 17px;
+      }
     }
   }
 
@@ -107,7 +114,7 @@
 
     &:first-child {
       margin: 0 0 0 0;
-      width:50%;
+      width: 50%;
 
       & input {
         max-width: 486px;
@@ -120,29 +127,31 @@
     }
 
     & input {
-      width:100%;
+      width: 100%;
       height: 48px;
     }
 
     &:last-child {
       display: flex;
-      justify-content:flex-end;
-      width:50%;
+      justify-content: flex-end;
+      width: 50%;
       margin: 0 0 0 78px;
 
-        & input {
-          max-width: 472px;
-          padding: 0 0 0 20px;
-        }
-        & label {
-          margin: 0 15px 0 0;
-          padding: 0;
-        }
-        & svg {
-          position: absolute;
-          top: 16px;
-          right: 17px;
-        }
+      & input {
+        max-width: 472px;
+        padding: 0 0 0 20px;
+      }
+
+      & label {
+        margin: 0 15px 0 0;
+        padding: 0;
+      }
+
+      & svg {
+        position: absolute;
+        top: 16px;
+        right: 17px;
+      }
     }
   }
 }

@@ -30,9 +30,10 @@
   border-top: solid 1px #e6e6e6;
   height: 65px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size:20px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+
   &:hover {
     opacity: 0.6;
   }
@@ -41,23 +42,33 @@
     opacity: 0.3;
   }
 
+  a {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-start;
     border-top: none;
     border-bottom: solid 2px transparent;
     height: 36px;
-    font-size:18px;
+    font-size: 18px;
     line-height: 24px;
+
+    a {
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 400;
+    }
   }
 
-  a {
-    font-size:18px;
-    line-height: 36px;
-    font-weight: 400;
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    a {
       font-size: 20px;
-      line-height: 30px;
+      line-height: 32px;
+      font-weight: 400;
     }
   }
 }
