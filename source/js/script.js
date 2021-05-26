@@ -1,5 +1,5 @@
-  var navMain = document.querySelector(".main-nav");
-  var navToogle = document.querySelector(".main-nav__toogle");
+  var navMain = document.querySelector('.main-nav');
+  var navToogle = document.querySelector('.main-nav__toogle');
 
   navMain.classList.remove('main-nav--nojs');
   navToogle.addEventListener('click', function() {
